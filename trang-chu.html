@@ -1,0 +1,2809 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <!-- Meta Tags - SEO Chuẩn -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Thiết Kế Website & Phát Triển Ứng Dụng Mobile - Golden Bee</title>
+    <meta
+      name="title"
+      content="Thiết Kế Website & Phát Triển Ứng Dụng Mobile - Golden Bee"
+    />
+    <meta
+      name="description"
+      content="Golden Bee chuyên thiết kế website, phát triển ứng dụng mobile, phần mềm quản lý và dịch vụ SEO. Giải pháp công nghệ toàn diện cho doanh nghiệp. Liên hệ: 0973 747 609"
+    />
+    <meta
+      name="keywords"
+      content="thiết kế website, phát triển app mobile, ứng dụng phần mềm, dịch vụ SEO, Golden Bee, công ty công nghệ, phần mềm quản lý, ERP, CRM, thiết kế web chuyên nghiệp"
+    />
+    <!-- Tailwind CSS v4 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style type="text/tailwindcss">
+      :root {
+        --color-primary: #fbcb1c;
+        --gradient: linear-gradient(90deg, #ffd84d 0%, #ff8a3d 100%);
+      }
+      @theme {
+        --color-primary: var(--color-primary);
+      }
+
+      @utility container {
+        @apply w-full mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+      }
+
+      @layer base {
+        body {
+          font-family: "Mulish", sans-serif;
+          line-height: 1.5;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="fixed top-0 lg:top-4 left-0 right-0 z-[9999] px-0 lg:px-3">
+      <div
+        class="container bg-white/70 backdrop-blur-md shadow-lg lg:rounded-full"
+      >
+        <nav class="px-2 sm:px-4 lg:px-6">
+          <div class="flex h-16 md:h-20 items-center justify-between">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+              <a
+                href="#"
+                class="flex items-center gap-2"
+                aria-label="Golden Bee - Trang chủ"
+              >
+                <img
+                  src="./assets/image/logo-goldenbee.webp"
+                  alt="Golden Bee Logo"
+                  class="h-8 md:h-10 w-auto"
+                />
+              </a>
+            </div>
+
+            <!-- Desktop Navigation Menu - Adjusted for smaller screens -->
+            <div class="hidden lg:flex lg:gap-4 xl:gap-6 2xl:gap-8">
+              <a
+                href="./gioi-thieu.html"
+                class="text-base font-medium text-gray-700 hover:text-primary transition-colors whitespace-nowrap"
+                >Giới thiệu</a
+              >
+              <div class="relative group">
+                <button
+                  class="text-base font-medium text-gray-700 hover:text-primary flex items-center gap-1 transition-colors whitespace-nowrap"
+                >
+                  Dịch vụ
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-3 h-3 xl:w-4 xl:h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown Menu -->
+                <div
+                  class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50"
+                >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 rounded-t-lg"
+                    >Thiết kế website</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50"
+                    >Ứng dụng phần mềm</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50"
+                    >Ứng dụng mobile</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 rounded-b-lg"
+                    >Dịch vụ SEO</a
+                  >
+                </div>
+              </div>
+              <a
+                href="#success"
+                class="text-base font-medium text-gray-700 hover:text-primary transition-colors whitespace-nowrap"
+                >Dự án</a
+              >
+              <a
+                href="#pricing"
+                class="text-base font-medium text-gray-700 hover:text-primary transition-colors whitespace-nowrap"
+                >Bảng giá</a
+              >
+              <div class="relative group">
+                <button
+                  class="text-base font-medium text-gray-700 hover:text-primary flex items-center gap-1 transition-colors whitespace-nowrap"
+                >
+                  Blog
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-3 h-3 xl:w-4 xl:h-4"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown Menu -->
+                <div
+                  class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50"
+                >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 rounded-t-lg"
+                    >Kiến thức Website</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50"
+                    >Kiến thức phần mềm</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50"
+                    >Kiến thức mobile</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-50 rounded-b-lg"
+                    >Kiến thức SEO</a
+                  >
+                </div>
+              </div>
+              <a
+                href="#contact"
+                class="text-base font-medium text-gray-700 hover:text-primary transition-colors whitespace-nowrap"
+                >Liên hệ</a
+              >
+              <a
+                href="#career"
+                class="text-base font-medium text-gray-700 hover:text-primary transition-colors whitespace-nowrap"
+                >Tuyển dụng</a
+              >
+            </div>
+
+            <!-- CTA Button + Mobile Menu Toggle -->
+            <div class="flex items-center gap-2 sm:gap-4">
+              <a
+                href="tel:0973747609"
+                class="hidden sm:inline-flex px-4 xl:px-6 py-2 text-white text-base font-semibold rounded-full hover:shadow-lg transform hover:scale-105 transition-all whitespace-nowrap"
+                style="background: var(--gradient)"
+              >
+                0973 747 609
+              </a>
+
+              <!-- Mobile Menu Button -->
+              <button
+                id="mobile-menu-btn"
+                class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+                aria-label="Toggle menu"
+                aria-expanded="false"
+              >
+                <svg
+                  class="h-6 w-6 text-gray-700"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Navigation Menu -->
+          <div
+            id="mobile-menu"
+            class="hidden lg:hidden pb-4 pt-2 border-t border-gray-200 max-h-[70vh] overflow-y-auto"
+          >
+            <a
+              href="./gioi-thieu.html"
+              class="block px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded transition-colors"
+              >Giới thiệu</a
+            >
+
+            <!-- Dịch vụ Mobile Dropdown -->
+            <div class="border-b border-gray-100">
+              <button
+                id="mobile-services-btn"
+                class="w-full text-left px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded flex items-center justify-between transition-colors"
+              >
+                Dịch vụ
+                <svg
+                  class="h-4 w-4 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div id="mobile-services-dropdown" class="hidden pl-4 pb-2">
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-base text-gray-600 hover:text-primary"
+                  >Thiết kế website</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-base text-gray-600 hover:text-primary"
+                  >Ứng dụng phần mềm</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-base text-gray-600 hover:text-primary"
+                  >Ứng dụng mobile</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-base text-gray-600 hover:text-primary"
+                  >Dịch vụ SEO</a
+                >
+              </div>
+            </div>
+
+            <a
+              href="#projects"
+              class="block px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded transition-colors"
+              >Dự án</a
+            >
+            <a
+              href="#pricing"
+              class="block px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded transition-colors"
+              >Bảng giá</a
+            >
+
+            <!-- Blog Mobile Dropdown -->
+            <div class="border-b border-gray-100">
+              <button
+                id="mobile-blog-btn"
+                class="w-full text-left px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded flex items-center justify-between transition-colors"
+              >
+                Blog
+                <svg
+                  class="h-4 w-4 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div id="mobile-blog-dropdown" class="hidden pl-4 pb-2">
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-base text-gray-600 hover:text-primary"
+                  >Kiến thức Website</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-base text-gray-600 hover:text-primary"
+                  >Kiến thức phần mềm</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-base text-gray-600 hover:text-primary"
+                  >Kiến thức mobile</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-base text-gray-600 hover:text-primary"
+                  >Kiến thức SEO</a
+                >
+              </div>
+            </div>
+
+            <a
+              href="#contact"
+              class="block px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded transition-colors"
+              >Liên hệ</a
+            >
+            <a
+              href="#career"
+              class="block px-4 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded transition-colors"
+              >Tuyển dụng</a
+            >
+
+            <a
+              href="tel:0973747609"
+              class="block sm:hidden mt-4 mx-4 px-6 py-3 text-white text-base font-semibold rounded-full hover:shadow-lg text-center transition-all"
+              style="background: var(--gradient)"
+            >
+              0973 747 609
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="relative">
+      <!-- Hero Section -->
+      <section
+        class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-orange-50 via-yellow-50 to-white relative overflow-hidden"
+      >
+        <!-- Background Decoration -->
+        <div
+          class="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"
+        ></div>
+
+        <div class="container relative z-10">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center"
+          >
+            <!-- Left Content -->
+            <div class="space-y-8">
+              <div class="inline-block"></div>
+              <h1
+                class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight"
+              >
+                Giải Pháp Công Nghệ
+                <span
+                  class="bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent mt-2"
+                  >Toàn Diện</span
+                >
+              </h1>
+              <p
+                class="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-xl"
+              >
+                Golden Bee giúp doanh nghiệp của bạn phát triển với các giải
+                pháp công nghệ hiện đại, sáng tạo và hiệu quả nhất.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                <a
+                  href="#contact"
+                  class="inline-flex items-center justify-center gap-3 px-8 py-4 text-white font-bold rounded-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 text-lg shadow-lg"
+                  style="background: var(--gradient)"
+                >
+                  Bắt Đầu Ngay
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#services"
+                  class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all duration-300 text-lg shadow-md hover:shadow-xl"
+                >
+                  Tìm Hiểu Thêm
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <!-- Stats -->
+              <div class="grid grid-cols-3 gap-6 pt-8 border-t border-gray-200">
+                <div>
+                  <div
+                    class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent"
+                  >
+                    500+
+                  </div>
+                  <div class="text-sm text-gray-600 mt-1">Dự Án</div>
+                </div>
+                <div>
+                  <div
+                    class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent"
+                  >
+                    350+
+                  </div>
+                  <div class="text-sm text-gray-600 mt-1">Khách Hàng</div>
+                </div>
+                <div>
+                  <div
+                    class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent"
+                  >
+                    98%
+                  </div>
+                  <div class="text-sm text-gray-600 mt-1">Hài Lòng</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Image Area -->
+            <div class="hidden md:flex justify-center items-center relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-primary/10 to-orange-500/10 rounded-3xl blur-3xl"
+              ></div>
+              <img
+                src="./assets/image/banner.png"
+                alt="Golden Bee Technology Solutions"
+                class="relative w-full h-auto object-contain transform hover:scale-105 transition-transform duration-500 drop-shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section - Dịch vụ chính -->
+      <section class="py-12 md:py-20 bg-white" id="services">
+        <div class="container">
+          <!-- Section Header -->
+          <div class="text-center mb-12 md:mb-16">
+            <h2
+              class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+            >
+              Dịch Vụ Của
+              <span class="text-primary">Chúng Tôi</span>
+            </h2>
+            <p class="text-md text-gray-600 max-w-2xl mx-auto">
+              Golden Bee cung cấp giải pháp công nghệ toàn diện giúp doanh
+              nghiệp của bạn phát triển bền vững trong thời đại số
+            </p>
+          </div>
+
+          <!-- Services Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Service 1: Thiết kế Website -->
+            <div
+              class="group bg-white border border-gray-200 rounded-2xl p-6 md:p-8 hover:shadow-2xl hover:border-primary transition-all duration-300 hover:-translate-y-2"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-orange-100 to-yellow-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform p-2"
+              >
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 512 512"
+                  xml:space="preserve"
+                  fill="#000000"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      style="fill: #415e72"
+                      d="M0,341.508V62.236c0.088-4.92,4.048-8.88,8.968-8.968h423.4c4.92,0.088,8.88,4.048,8.968,8.968 v279.28L0,341.508z"
+                    ></path>
+                    <g>
+                      <path
+                        style="fill: #cfdce5"
+                        d="M441.328,341.508v35.856c-0.088,4.92-4.048,8.88-8.968,8.968H8.968 c-4.912-0.088-8.88-4.048-8.968-8.96v-35.864L441.328,341.508L441.328,341.508z"
+                      ></path>
+                      <rect
+                        x="126.192"
+                        y="449.764"
+                        style="fill: #cfdce5"
+                        width="188.944"
+                        height="8.968"
+                      ></rect>
+                    </g>
+                    <polygon
+                      style="fill: #aec4ce"
+                      points="283.416,449.772 157.912,449.772 166.88,386.332 274.456,386.332 "
+                    ></polygon>
+                    <rect
+                      x="17.928"
+                      y="71.196"
+                      style="fill: #ffffff"
+                      width="405.472"
+                      height="252.384"
+                    ></rect>
+                    <polygon
+                      style="fill: #94a7af"
+                      points="274.456,386.332 166.88,386.332 161.872,421.74 276.064,397.732 "
+                    ></polygon>
+                    <g>
+                      <path
+                        style="fill: #fbff29"
+                        d="M62.488,238.644L42.4,159.58h10.816l9.384,40c2.344,9.848,4.456,19.704,5.864,27.328h0.232 c1.296-7.856,3.752-17.24,6.456-27.448l10.56-39.888h10.672l9.6,40.128c2.232,9.384,4.344,18.768,5.512,27.096h0.232 c1.64-8.68,3.872-17.48,6.336-27.328l10.4-39.888h10.44l-22.4,79.072h-10.616l-9.968-41.176c-2.2-8.504-3.92-17.12-5.168-25.816 H90.52c-1.568,8.712-3.608,17.328-6.096,25.816L73.16,238.644H62.488z"
+                      ></path>
+                      <path
+                        style="fill: #fbff29"
+                        d="M163.592,238.644l-20.064-79.072h10.792l9.384,40c2.344,9.848,4.456,19.704,5.864,27.328h0.232 c1.296-7.856,3.752-17.24,6.456-27.448l10.56-39.888h10.672l9.6,40.128c2.232,9.384,4.344,18.768,5.512,27.096h0.232 c1.64-8.68,3.872-17.48,6.336-27.328l10.4-39.888h10.44l-22.4,79.072h-10.616l-9.968-41.168c-2.2-8.504-3.92-17.12-5.168-25.816 h-0.232c-1.568,8.712-3.608,17.328-6.096,25.816l-11.264,41.168L163.592,238.644L163.592,238.644z"
+                      ></path>
+                    </g>
+                    <path
+                      style="fill: #25b6d2"
+                      d="M496.968,327.876L496.968,327.876l-39.512-39.472l-8.656-8.672 c-9.848-9.84-25.816-9.832-35.656,0.016s-9.832,25.816,0.024,35.656l0,0l14.968,14.952l0.056,0.072l15.2,15.152l33.016,32.992 L512,342.9L496.968,327.876z"
+                    ></path>
+                    <ellipse
+                      style="fill: #415e72"
+                      cx="346.4"
+                      cy="213.068"
+                      rx="121.784"
+                      ry="121.704"
+                    ></ellipse>
+                    <ellipse
+                      style="fill: #ffffff"
+                      cx="346.4"
+                      cy="213.068"
+                      rx="112.48"
+                      ry="112.4"
+                    ></ellipse>
+                    <path
+                      style="fill: #e8d611"
+                      d="M346.4,314.116c-55.808-0.04-101.016-45.312-100.976-101.12s45.312-101.016,101.12-100.976 c55.776,0.04,100.976,45.272,100.976,101.048C447.44,268.868,402.2,314.076,346.4,314.116z M346.4,116.012 c-53.6,0.04-97.016,43.52-96.976,97.12s43.52,97.016,97.12,96.976c53.568-0.04,96.968-43.472,96.976-97.04 C443.448,159.468,400,116.052,346.4,116.012L346.4,116.012z"
+                    ></path>
+                    <g>
+                      <path
+                        style="fill: #fbff29"
+                        d="M303.568,252.332l-23.336-92H292.8l10.92,46.536c2.728,11.464,5.176,22.928,6.824,31.8h0.272 c1.504-9.144,4.368-20.064,7.504-31.936l12.28-46.4h12.424l11.2,46.672c2.592,10.92,5.048,21.832,6.4,31.528h0.272 c1.912-10.104,4.504-20.336,7.368-31.808l12.152-46.4h12.152l-26.072,92h-12.432l-11.6-47.904 c-2.56-9.888-4.56-19.912-6.008-30.024h-0.272c-1.824,10.128-4.192,20.152-7.096,30.024L316,252.332H303.568z"
+                      ></path>
+                      <path
+                        style="fill: #fbff29"
+                        d="M393.224,245.244c-0.296-4.448,3.08-8.288,7.528-8.584c0.216-0.016,0.44-0.016,0.656-0.016 c4.752-0.232,8.784,3.424,9.024,8.176c0.232,4.752-3.424,8.784-8.176,9.024s-8.784-3.424-9.024-8.176 C393.224,245.524,393.224,245.388,393.224,245.244z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <h3
+                class="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors"
+              >
+                Thiết Kế Website
+              </h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Thiết kế website chuyên nghiệp, responsive trên mọi thiết bị,
+                tối ưu SEO và trải nghiệm người dùng.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <svg
+                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>Responsive Design</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <svg
+                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>Tối ưu SEO</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <svg
+                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>Bảo mật cao</span>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+              >
+                Tìm hiểu thêm
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Service 2: Ứng dụng Phần mềm -->
+            <div
+              class="group bg-white border border-gray-200 rounded-2xl p-6 md:p-8 hover:shadow-2xl hover:border-primary transition-all duration-300 hover:-translate-y-2"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform p-2"
+              >
+                <svg
+                  width="150px"
+                  height="150px"
+                  viewBox="0 0 1024 1024"
+                  class="icon"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#000000"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M496.939726 462.449075c-14.648177-8.454234-36.851467-9.37833-49.539062-2.047997L33.542827 699.329957c-12.687594 7.330333-11.101645 20.142805 3.55902 28.609526L520.479209 1007.016606c14.648177 8.466721 36.851467 9.37833 49.539062 2.060485l413.857836-238.941367c12.687594-7.330333 11.101645-20.142805-3.55902-28.609526L496.939726 462.449075z"
+                      fill="#BBC6E6"
+                    ></path>
+                    <path
+                      d="M24.976204 690.675919v21.079389l17.17071 10.227499 5.119994-26.224358L24.976204 690.675919zM992.442731 736.630985v21.079389l-20.50495 10.639596-6.705943-23.252264 27.210893-8.466721z"
+                      fill="#BBC6E6"
+                    ></path>
+                    <path
+                      d="M496.939726 441.369686c-14.648177-8.454234-36.851467-9.37833-49.539062-2.047997L33.542827 678.263056c-12.687594 7.317845-11.101645 20.142805 3.55902 28.597038l483.377362 279.077123c14.648177 8.466721 36.851467 9.37833 49.539062 2.060485l413.857836-238.941367c12.687594-7.330333 11.101645-20.142805-3.55902-28.609526L496.939726 441.369686z"
+                      fill="#F3F5FB"
+                    ></path>
+                    <path
+                      d="M376.157824 535.565083c-3.309264-1.910632-8.30438-2.110436-11.164084-0.462048l-93.208862 53.809886c-2.859704 1.648388-2.497558 4.533068 0.799219 6.443699l447.887063 258.584661c3.296776 1.910632 8.291892 2.110436 11.151597 0.462048l93.208861-53.809886c2.859704-1.660876 2.497558-4.545555-0.799218-6.443699L376.157824 535.565083z"
+                      fill="#DEE5F6"
+                    ></path>
+                    <path
+                      d="M885.67213 722.457343c-3.521557 2.03551-9.228477 2.03551-12.750034 0-3.521557-2.023022-3.521557-5.332286 0-7.367796 3.521557-2.023022 9.228477-2.023022 12.750034 0 3.521557 2.03551 3.521557 5.344774 0 7.367796zM813.367828 764.216512c-3.521557 2.023022-9.240964 2.023022-12.762521 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.03551 9.240964-2.03551 12.762521 0 3.509069 2.03551 3.509069 5.332286 0 7.367796zM741.051038 805.963193c-3.521557 2.03551-9.240964 2.03551-12.762521 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.03551 9.240964-2.03551 12.762521 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM668.734248 847.709874c-3.521557 2.03551-9.240964 2.03551-12.762521 0-3.509069-2.03551-3.509069-5.332286 0-7.367796 3.521557-2.023022 9.240964-2.023022 12.762521 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM596.417458 889.469042c-3.521557 2.023022-9.228477 2.023022-12.750033 0-3.521557-2.03551-3.521557-5.344774 0-7.367796 3.521557-2.03551 9.228477-2.03551 12.750033 0 3.521557 2.023022 3.521557 5.332286 0 7.367796zM524.100668 931.215723c-3.509069 2.03551-9.228477 2.03551-12.750033 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.03551 9.240964-2.03551 12.750033 0 3.521557 2.03551 3.521557 5.332286 0 7.367796z"
+                      fill="#C4CBDC"
+                    ></path>
+                    <path
+                      d="M385.523666 475.036767l536.475444 309.734647 1.685851-0.96156-536.475443-309.747135-1.685852 0.974048zM313.643949 516.54618l536.475444 309.734646 1.685851-0.974047L315.317313 515.572132l-1.673364 0.974048z"
+                      fill="#DEE3F1"
+                    ></path>
+                    <path
+                      d="M896.861189 672.456234l-459.837878 265.490408 1.685852 0.974047 459.837878-265.490408-1.685852-0.974047z"
+                      fill="#DEE3F1"
+                    ></path>
+                    <path
+                      d="M472.363756 483.828171c-3.521557 2.03551-9.240964 2.03551-12.762521 0-3.521557-2.023022-3.521557-5.332286 0-7.367796 3.521557-2.023022 9.240964-2.023022 12.762521 0 3.521557 2.03551 3.521557 5.344774 0 7.367796zM400.046966 525.58734c-3.521557 2.023022-9.240964 2.023022-12.762521 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.03551 9.240964-2.03551 12.762521 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM327.730176 567.33402c-3.521557 2.03551-9.240964 2.03551-12.750033 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.509069-2.03551 9.228477-2.03551 12.750033 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM255.413386 609.080701c-3.521557 2.03551-9.228477 2.03551-12.750033 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.023022 9.228477-2.023022 12.750033 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM183.096596 650.827382c-3.509069 2.03551-9.228477 2.03551-12.750033 0-3.521557-2.023022-3.521557-5.332286 0-7.355308 3.521557-2.03551 9.240964-2.03551 12.750033 0 3.521557 2.023022 3.521557 5.332286 0 7.355308zM110.792294 692.586551c-3.521557 2.03551-9.240964 2.03551-12.762521 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.03551 9.240964-2.03551 12.762521 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM541.246403 523.601781c-3.521557 2.03551-9.240964 2.03551-12.762521 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.023022 9.240964-2.023022 12.762521 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM468.929614 565.348462c-3.521557 2.03551-9.240964 2.03551-12.750034 0-3.521557-2.023022-3.521557-5.332286 0-7.355308 3.509069-2.03551 9.228477-2.03551 12.750034 0 3.521557 2.023022 3.521557 5.332286 0 7.355308zM396.612824 607.10763c-3.521557 2.023022-9.228477 2.023022-12.750034 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.03551 9.228477-2.03551 12.750034 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM324.308522 648.854311c-3.521557 2.03551-9.240964 2.03551-12.762521 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.03551 9.240964-2.03551 12.762521 0 3.509069 2.03551 3.509069 5.332286 0 7.367796zM251.991732 690.600992c-3.521557 2.03551-9.240964 2.03551-12.762521 0-3.521557-2.023022-3.521557-5.332286 0-7.355308 3.521557-2.03551 9.240964-2.03551 12.762521 0 3.521557 2.023022 3.521557 5.332286 0 7.355308zM179.674942 732.360161c-3.521557 2.023022-9.240964 2.023022-12.762521 0-3.509069-2.03551-3.509069-5.332286 0-7.367796 3.521557-2.03551 9.240964-2.03551 12.762521 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM610.129051 563.375391c-3.521557 2.03551-9.228477 2.03551-12.750033 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.03551 9.228477-2.03551 12.750033 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM537.812261 605.122072c-3.509069 2.03551-9.228477 2.03551-12.750033 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.023022 9.240964-2.023022 12.750033 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM465.507959 646.88124c-3.521557 2.023022-9.240964 2.023022-12.762521 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.03551 9.240964-2.03551 12.762521 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM393.191169 688.627921c-3.521557 2.03551-9.240964 2.03551-12.762521 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.03551 9.240964-2.03551 12.762521 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM320.874379 730.374602c-3.521557 2.03551-9.240964 2.03551-12.750033 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.509069-2.023022 9.228477-2.023022 12.750033 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM248.55759 772.121283c-3.521557 2.03551-9.228477 2.03551-12.750034 0-3.521557-2.023022-3.521557-5.332286 0-7.355308 3.521557-2.03551 9.228477-2.03551 12.750034 0 3.521557 2.023022 3.521557 5.332286 0 7.355308zM679.011699 603.149001c-3.509069 2.03551-9.228477 2.03551-12.750033 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.03551 9.240964-2.03551 12.750033 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM606.707397 644.895682c-3.521557 2.03551-9.240964 2.03551-12.762521 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.023022 9.240964-2.023022 12.762521 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM534.390607 686.642363c-3.521557 2.03551-9.240964 2.03551-12.762521 0-3.521557-2.023022-3.521557-5.332286 0-7.355308 3.521557-2.03551 9.240964-2.03551 12.762521 0 3.521557 2.023022 3.521557 5.332286 0 7.355308zM462.073817 728.401531c-3.521557 2.023022-9.228477 2.023022-12.750033 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.03551 9.228477-2.03551 12.750033 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM389.757027 770.148212c-3.521557 2.03551-9.228477 2.03551-12.750033 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.03551 9.228477-2.03551 12.750033 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM317.452725 811.894893c-3.521557 2.03551-9.240964 2.03551-12.762521 0-3.521557-2.023022-3.521557-5.332286 0-7.355308 3.521557-2.03551 9.240964-2.03551 12.762521 0 3.509069 2.023022 3.509069 5.332286 0 7.355308zM747.906834 642.922611c-3.521557 2.023022-9.240964 2.023022-12.762521 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.03551 9.240964-2.03551 12.762521 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM675.590044 684.669292c-3.521557 2.03551-9.240964 2.03551-12.762521 0-3.509069-2.03551-3.509069-5.332286 0-7.367796 3.521557-2.03551 9.240964-2.03551 12.762521 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM603.273255 726.415973c-3.521557 2.03551-9.228477 2.03551-12.750034 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.023022 9.228477-2.023022 12.750034 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM530.956465 768.175141c-3.509069 2.023022-9.228477 2.023022-12.750034 0-3.521557-2.03551-3.521557-5.344774 0-7.367796 3.521557-2.03551 9.240964-2.03551 12.750034 0 3.521557 2.023022 3.521557 5.332286 0 7.367796zM458.652163 809.921822c-3.521557 2.03551-9.240964 2.03551-12.762521 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.03551 9.240964-2.03551 12.762521 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM386.335373 851.668503c-3.521557 2.03551-9.240964 2.03551-12.762521 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.023022 9.240964-2.023022 12.762521 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM816.789482 682.683733c-3.521557 2.03551-9.240964 2.03551-12.750033 0-3.521557-2.023022-3.521557-5.332286 0-7.355308 3.509069-2.03551 9.228477-2.03551 12.750033 0 3.521557 2.023022 3.521557 5.332286 0 7.355308zM744.472692 724.442902c-3.521557 2.023022-9.228477 2.023022-12.750033 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.03551 9.228477-2.03551 12.750033 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM672.16839 766.189583c-3.521557 2.03551-9.240964 2.03551-12.762521 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.023022 9.240964-2.023022 12.762521 0 3.509069 2.03551 3.509069 5.332286 0 7.367796zM599.8516 807.936263c-3.521557 2.03551-9.240964 2.03551-12.762521 0-3.521557-2.023022-3.521557-5.332286 0-7.355308 3.521557-2.03551 9.240964-2.03551 12.762521 0 3.521557 2.023022 3.521557 5.332286 0 7.355308zM527.53481 849.695432c-3.521557 2.023022-9.240964 2.023022-12.762521 0-3.509069-2.03551-3.509069-5.332286 0-7.367796 3.521557-2.03551 9.240964-2.03551 12.762521 0 3.521557 2.03551 3.521557 5.332286 0 7.367796zM455.21802 891.442113c-3.521557 2.03551-9.228477 2.03551-12.750033 0-3.521557-2.03551-3.521557-5.332286 0-7.367796 3.521557-2.03551 9.228477-2.03551 12.750033 0 3.521557 2.03551 3.521557 5.332286 0 7.367796z"
+                      fill="#C4CBDC"
+                    ></path>
+                    <path
+                      d="M547.065713 470.503699L87.227835 735.994107l1.685852 0.96156 459.837878-265.47792-1.685852-0.974048z"
+                      fill="#DEE3F1"
+                    ></path>
+                    <path
+                      d="M241.751744 558.043105l536.475444 309.734646 1.685851-0.961559-536.475443-309.747135-1.685852 0.974048zM169.872027 599.552518l536.475443 309.734646 1.685852-0.974047-536.475443-309.734647-1.685852 0.974048zM97.979822 641.049443l536.487931 309.734646 1.673364-0.974047-536.475443-309.734647-1.685852 0.974048z"
+                      fill="#DEE3F1"
+                    ></path>
+                    <path
+                      d="M617.022311 510.889211l-459.837878 265.490408 1.685851 0.974048 459.837879-265.490408-1.685852-0.974048zM686.991396 551.287211L227.153518 816.765131l1.673364 0.974047 459.837878-265.490408-1.673364-0.961559zM756.947994 591.672722L297.110116 857.16313l1.685851 0.974048 459.837879-265.490408-1.685852-0.974048zM826.904592 632.058234l-459.837879 265.490408 1.685852 0.974048 459.837878-265.490408-1.685851-0.974048z"
+                      fill="#DEE3F1"
+                    ></path>
+                    <path
+                      d="M753.051804 271.298479c0-4.882726-2.972094-10.56467-6.631017-12.675107L299.857429 0.800467c-3.67141-2.122924-6.643504 0.124878-6.643504 5.007604v424.784653c0 4.882726 2.972094 10.56467 6.643504 12.687594l446.563358 257.822905c3.658922 2.110436 6.631016-0.137366 6.631017-5.020091V271.298479z"
+                      fill="#8095D1"
+                    ></path>
+                    <path
+                      d="M676.414239 315.555205c0-4.882726-2.972094-10.577158-6.631017-12.687594L223.207377 45.044706c-3.658922-2.110436-6.631016 0.137366-6.631017 5.020091v424.784653c0 4.882726 2.972094 10.56467 6.631017 12.675107l446.575845 257.822905c3.658922 2.122924 6.631016-0.124878 6.631017-5.020092V315.555205z"
+                      fill="#4463B9"
+                    ></path>
+                    <path
+                      d="M343.876888 372.799233l-7.130528 3.184387 40.360536 82.431899 7.130528-3.184386-40.360536-82.4319z"
+                      fill="#F2F2F2"
+                    ></path>
+                    <path
+                      d="M385.074106 354.404719l-48.327746 21.578901 5.856773 11.950814 48.315259-21.591388-5.844286-11.938327z"
+                      fill="#F2F2F2"
+                    ></path>
+                    <path
+                      d="M492.818755 478.708177l7.130528-3.184386-40.360536-82.419412-7.130528 3.184387 40.360536 82.419411z"
+                      fill="#F2F2F2"
+                    ></path>
+                    <path
+                      d="M451.621537 497.115179l48.327746-21.591388-5.856773-11.950815-48.315259 21.591388 5.844286 11.950815z"
+                      fill="#F2F2F2"
+                    ></path>
+                    <path
+                      d="M676.414239 315.892376c0-5.070043-3.084484-10.976767-6.89326-13.174618L222.745328 44.769975c-3.409167-1.960583-6.168968 0.124878-6.168968 4.670433v40.148244l459.837879 265.490408v-39.186684z"
+                      fill="#385593"
+                    ></path>
+                    <path
+                      d="M375.458508 240.828272c0-4.00858-2.435119-8.654038-5.432189-10.389841l-123.816434-71.480108c-2.99707-1.735803-5.432188 0.11239-5.432188 4.108483s2.435119 8.654038 5.432188 10.389841l123.816434 71.46762c2.99707 1.735803 5.432188-0.099902 5.432189-4.095995zM428.082054 271.198577c0-3.996093-2.435119-8.64155-5.432189-10.377354l-33.304935-19.231196c-2.99707-1.723315-5.432188 0.11239-5.432188 4.108483 0 4.00858 2.435119 8.654038 5.432188 10.389841l33.304935 19.218708c2.99707 1.735803 5.432188-0.099902 5.432189-4.108482zM443.766717 388.608775l-5.294822-8.691502-45.580433 83.455898 5.307311 8.691502 45.567944-83.455898z"
+                      fill="#F2F2F2"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <h3
+                class="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors"
+              >
+                Ứng Dụng Phần Mềm
+              </h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Phát triển phần mềm quản lý doanh nghiệp, ERP, CRM tùy chỉnh
+                theo nhu cầu riêng của bạn.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <svg
+                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>Quản lý ERP/CRM</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <svg
+                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>Tùy chỉnh linh hoạt</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <svg
+                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>Tích hợp dễ dàng</span>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+              >
+                Tìm hiểu thêm
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Service 3: Ứng dụng Mobile -->
+            <div
+              class="group bg-white border border-gray-200 rounded-2xl p-6 md:p-8 hover:shadow-2xl hover:border-primary transition-all duration-300 hover:-translate-y-2"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-purple-100 to-pink-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
+              >
+                <svg
+                  viewBox="0 0 1024 1024"
+                  class="icon"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#000000"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M905.8 598.4c-1.1 11-11.2 16.5-19.8 21.5-8 4.6-16 9.3-23.9 13.9-12.8 7.4-25.5 14.8-38.3 22.2-16 9.3-31.9 18.6-47.9 27.8-17.6 10.2-35.2 20.5-52.9 30.7-17.7 10.3-35.4 20.6-53.2 30.9-16.3 9.5-32.5 18.9-48.8 28.4-13.3 7.7-26.5 15.4-39.8 23.1-8.7 5-17.4 10.1-26.1 15.1-6.6 3.8-12.8 7.6-20.3 9.8-19.5 5.6-41.1 3.7-58.7-6.5-6.3-3.7-12.7-7.3-19-11-11.6-6.7-23.1-13.3-34.7-20-15.2-8.8-30.4-17.6-45.6-26.3-17.3-10-34.7-20-52-30-17.9-10.3-35.8-20.7-53.7-31-16.9-9.8-33.8-19.5-50.8-29.3l-43.2-24.9c-10.3-6-20.7-11.9-31-17.9-4.7-2.7-9.4-5.4-14.1-8.2-7.4-4.3-14.7-11.1-14.7-20.3 0 8.4 0 16.8-0.1 25.3 0 3-0.2 6.1 0 9.2 0.6 8.1 7 14.4 13.7 18.4 4.1 2.5 8.3 4.8 12.5 7.2 10.8 6.2 21.6 12.5 32.4 18.7 15.6 9 31.1 18 46.7 27 18.5 10.7 37.1 21.4 55.6 32.1 19.3 11.2 38.6 22.3 58 33.5 18.4 10.6 36.7 21.2 55.1 31.8 15.3 8.8 30.5 17.6 45.8 26.4 10.3 6 20.7 11.9 31 17.9 6 3.4 11.9 7.3 18.4 9.7 20.3 7.4 44.1 5.8 62.8-5.1 7.1-4.1 14.2-8.3 21.3-12.4 13.1-7.6 26.2-15.2 39.2-22.8 17.1-9.9 34.1-19.8 51.2-29.8 19.1-11.1 38.2-22.2 57.2-33.3l57.3-33.3c17.1-10 34.2-19.9 51.4-29.9 13.3-7.7 26.6-15.4 39.9-23.2 7.3-4.3 14.7-8.5 22-12.8 2.2-1.3 4.5-2.6 6.6-4.1 5.6-4.2 10-10 10.1-17.3 0.1-3.7 0-7.3 0-11 0-7.3 0-14.7 0.1-22 0.4 0.8 0.4 1.3 0.3 1.8 0 0.3 0-0.2 0 0zM905.9 596.8z"
+                      fill="#7A9EFD"
+                    ></path>
+                    <path
+                      d="M891.6 576.9c19 11 19.1 28.9 0.2 39.9L547.4 816.9c-18.9 11-49.8 11-68.8 0L131.9 616.8c-19-11-19.1-28.9-0.2-39.9l344.4-200.2c18.9-11 49.8-11 68.8 0l346.7 200.2z"
+                      fill="#E4ECF9"
+                    ></path>
+                    <path
+                      d="M521.3 174c9.5-5.5 17.3-1 17.4 9.9l1 345.8c0 10.9-7.7 24.4-17.2 29.9L346 661.4c-9.5 5.5-17.3 1-17.4-9.9l-1-345.8c0-10.9 7.7-24.4 17.3-29.9L521.3 174z"
+                      fill="#4040FF"
+                    ></path>
+                    <path
+                      d="M505.5 220.3c3.3-1.9 6-0.4 6 3.4l0.7 246.6c0 3.8-2.7 8.5-6 10.4l-144.4 83.4c-3.3 1.9-6 0.4-6-3.4l-0.8-246.6c0-3.8 2.7-8.5 6-10.4l144.5-83.4z"
+                      fill="#2A2ABC"
+                    ></path>
+                    <path
+                      d="M525.3 172.3c0.3-0.1 0.5-0.2 0.8-0.2 0.2-0.1 0.5-0.1 0.7-0.2 0.3-0.1 0.6-0.1 0.9-0.1 0.2 0 0.3 0 0.5-0.1h1.3c0.4 0 0.9 0.1 1.3 0.2 0.1 0 0.2 0 0.3 0.1 0.3 0.1 0.6 0.2 1 0.3 0.1 0 0.2 0.1 0.3 0.1 0.4 0.2 0.8 0.3 1.1 0.5l-14.8-8.6s-0.1 0-0.1-0.1c-0.3-0.2-0.6-0.3-0.9-0.4-0.1 0-0.1 0-0.2-0.1-0.1 0-0.2-0.1-0.3-0.1-0.2-0.1-0.3-0.1-0.5-0.2-0.2 0-0.3-0.1-0.5-0.1-0.1 0-0.2-0.1-0.3-0.1h-0.2c-0.3-0.1-0.7-0.1-1.1-0.1H513.1c-0.2 0-0.3 0-0.5 0.1-0.2 0-0.3 0-0.5 0.1-0.1 0-0.3 0.1-0.4 0.1-0.2 0-0.5 0.1-0.7 0.2-0.1 0-0.3 0-0.4 0.1-0.1 0-0.3 0.1-0.4 0.1-0.4 0.1-0.8 0.3-1.2 0.4-0.1 0.1-0.3 0.1-0.4 0.2-0.1 0-0.2 0.1-0.2 0.1-0.7 0.3-1.4 0.6-2.1 1.1L330.1 267.3c-0.6 0.3-1.1 0.7-1.6 1-0.2 0.1-0.3 0.3-0.5 0.4-0.4 0.3-0.7 0.5-1.1 0.8-0.2 0.2-0.4 0.3-0.6 0.5-0.3 0.3-0.7 0.6-1 0.9-0.2 0.2-0.4 0.4-0.6 0.5-0.1 0.1-0.2 0.2-0.4 0.3-0.1 0.1-0.2 0.3-0.4 0.4l-1.2 1.2c-0.1 0.1-0.2 0.3-0.4 0.4-0.1 0.1-0.2 0.2-0.3 0.4-0.2 0.3-0.5 0.5-0.7 0.8-0.1 0.2-0.3 0.3-0.4 0.5-0.1 0.2-0.2 0.3-0.3 0.5-0.2 0.2-0.3 0.4-0.5 0.7-0.1 0.1-0.2 0.3-0.3 0.4-0.2 0.3-0.4 0.5-0.5 0.8-0.1 0.2-0.2 0.3-0.3 0.5 0 0.1-0.1 0.1-0.1 0.2l-0.9 1.5s0 0.1-0.1 0.1c-0.1 0.1-0.1 0.2-0.2 0.3-0.2 0.4-0.4 0.7-0.6 1.1-0.1 0.2-0.2 0.3-0.2 0.5-0.1 0.2-0.2 0.4-0.3 0.5-0.1 0.2-0.2 0.3-0.2 0.5-0.2 0.4-0.4 0.8-0.5 1.2 0 0.1-0.1 0.2-0.1 0.3v0.1c-0.2 0.5-0.4 1-0.6 1.6 0 0.1-0.1 0.2-0.1 0.3-0.1 0.2-0.1 0.4-0.2 0.6-0.1 0.3-0.2 0.5-0.3 0.8-0.1 0.2-0.1 0.4-0.2 0.6-0.1 0.2-0.1 0.5-0.2 0.7 0 0.2-0.1 0.3-0.1 0.5-0.1 0.3-0.1 0.5-0.2 0.8-0.1 0.3-0.2 0.6-0.2 0.9 0 0.1-0.1 0.2-0.1 0.3 0 0.2-0.1 0.4-0.1 0.6-0.1 0.5-0.2 0.9-0.2 1.4 0 0.1-0.1 0.3-0.1 0.4 0 0.3-0.1 0.6-0.1 0.8 0 0.2 0 0.4-0.1 0.6 0 0.6-0.1 1.3-0.1 1.9l1 345.8c0 4.8 1.5 8.3 4 10.3 0.4 0.3 0.7 0.5 1.1 0.8l14.8 8.6c-3.1-1.8-5.1-5.6-5.1-11.1l-1-345.8c0-0.6 0-1.3 0.1-1.9 0-0.2 0-0.4 0.1-0.6 0-0.4 0.1-0.8 0.2-1.2 0.1-0.4 0.1-0.9 0.2-1.4 0.1-0.3 0.1-0.6 0.2-1 0.1-0.3 0.1-0.6 0.2-0.9l0.3-1.2c0.1-0.2 0.1-0.5 0.2-0.7 0.1-0.5 0.3-0.9 0.5-1.4 0.1-0.2 0.1-0.4 0.2-0.6 0.2-0.6 0.5-1.3 0.8-1.9 0-0.1 0.1-0.2 0.1-0.3 0.2-0.6 0.5-1.1 0.8-1.6 0.1-0.2 0.2-0.3 0.3-0.5 0.3-0.5 0.6-1.1 0.8-1.6 0.1-0.1 0.1-0.2 0.2-0.3 0.3-0.6 0.7-1.2 1.1-1.8 0.1-0.2 0.2-0.3 0.3-0.5l0.9-1.2c0.2-0.2 0.3-0.4 0.5-0.7 0.3-0.3 0.5-0.7 0.8-1 0.2-0.3 0.4-0.6 0.7-0.8 0.2-0.3 0.4-0.5 0.7-0.8 0.4-0.4 0.8-0.8 1.1-1.2l0.7-0.7c0.2-0.2 0.4-0.4 0.6-0.5 0.3-0.3 0.7-0.6 1-0.9 0.2-0.2 0.4-0.3 0.6-0.5 0.4-0.3 0.7-0.6 1.1-0.8 0.2-0.1 0.3-0.3 0.5-0.4 0.5-0.4 1.1-0.7 1.6-1L521.3 174c0.7-0.4 1.4-0.8 2.2-1.1 0.2-0.1 0.5-0.2 0.7-0.3 0.3-0.1 0.7-0.2 1.1-0.3z"
+                      fill="#2A2ABC"
+                    ></path>
+                    <path
+                      d="M444.1 539.6c10.9-6.3 19.7-1.2 19.8 11.3s-8.8 27.7-19.6 34c-10.9 6.3-19.7 1.2-19.7-11.3-0.2-12.5 8.6-27.7 19.5-34z"
+                      fill="#FFFFFF"
+                    ></path>
+                    <path
+                      d="M456.5 382.9l-22.4 12.9v12l22.4-12.9c2.9-1.7 5.2-5.7 5.2-9s-2.3-4.6-5.2-3z"
+                      fill="#161691"
+                    ></path>
+                    <path
+                      d="M434.1 370.2v7.7l22.4-12.9c2.9-1.7 5.2-5.7 5.2-9s-2.3-4.6-5.2-3l-19 11 17.4-30.2c2-3.5 2-7.3 0-8.5-1-0.6-2.4-0.4-3.7 0.4-1.3 0.8-2.7 2.1-3.7 3.9l-18.6 32.2-18.7-10.7c-1-0.6-2.4-0.4-3.7 0.4-1.3 0.8-2.7 2.1-3.7 3.9-2 3.5-2 7.3 0 8.5l17.5 10-19 11c-2.9 1.7-5.2 5.7-5.2 9s2.4 4.6 5.2 3l22.3-12.9 0.1 18v12l0.1 19.7c0 3.3 2.4 4.6 5.2 3 2.9-1.7 5.2-5.7 5.2-9l-0.1-19.7v-12l-0.1-18 0.1-7.8z m-10.4 6c0-1.7 0.6-3.5 1.5-5.1-1 1.6-1.5 3.4-1.5 5.1z m8.9-9.4c0.7 0.4 1.2 1.2 1.4 2.2-0.2-1-0.7-1.8-1.4-2.2z"
+                      fill="#161691"
+                    ></path>
+                    <path
+                      d="M401.4 414.7c-2.9 1.7-5.2 5.7-5.2 9s2.4 4.6 5.2 3l22.3-12.9v-12l-22.3 12.9z"
+                      fill="#161691"
+                    ></path>
+                    <path
+                      d="M450 420.4l-13.8-8v-12l13.8 8zM439.6 426.4l-13.8-8v-12l13.7 8.1zM449.9 390.5l-13.8-8v-7.8l13.8 8.1z"
+                      fill="#222288"
+                    ></path>
+                    <path
+                      d="M449.9 382.8l-13.8-8c0-1.7-0.6-2.8-1.5-3.4l13.8 8c0.9 0.5 1.5 1.7 1.5 3.4"
+                      fill="#212185"
+                    ></path>
+                    <path
+                      d="M449 379l-13.8-8 4.2-2.4 13.8 8z"
+                      fill="#3737DB"
+                    ></path>
+                    <path
+                      d="M449.9 382.8l-13.8-8c0-1.7-0.6-2.8-1.5-3.4l13.8 8c0.9 0.5 1.5 1.7 1.5 3.4"
+                      fill="#212185"
+                    ></path>
+                    <path
+                      d="M448.4 379.4l-13.8-8 0.6-0.4 13.8 8z"
+                      fill="#3737DB"
+                    ></path>
+                    <path
+                      d="M449 379l-13.8-8c-0.1-1.4-0.6-2.5-1.5-3l13.8 8c0.9 0.6 1.4 1.7 1.5 3"
+                      fill="#212185"
+                    ></path>
+                    <path
+                      d="M439.5 396.5l-13.8-8v-7.7l13.8 8z"
+                      fill="#222288"
+                    ></path>
+                    <path
+                      d="M444.7 379.8l-13.8-8c0.2-0.1 0.5-0.3 0.7-0.4l13.8 8c-0.2 0.1-0.5 0.2-0.7 0.4"
+                      fill="#3333CC"
+                    ></path>
+                    <path
+                      d="M445.4 379.4l-13.8-8c0.2-0.1 0.4-0.2 0.6-0.2l13.8 8c-0.2 0.1-0.4 0.1-0.6 0.2"
+                      fill="#3232C7"
+                    ></path>
+                    <path
+                      d="M446 379.2l-13.8-8c0.2 0 0.3-0.1 0.5-0.1l13.8 8c-0.2 0-0.3 0.1-0.5 0.1"
+                      fill="#3131C2"
+                    ></path>
+                    <path
+                      d="M446.5 379.1l-13.8-8h0.4l13.8 8h-0.4"
+                      fill="#2F2FBD"
+                    ></path>
+                    <path
+                      d="M446.9 379.1l-13.8-8h0.3l13.8 8h-0.3"
+                      fill="#2E2EB8"
+                    ></path>
+                    <path
+                      d="M447.2 379.1l-13.8-8h0.3l13.8 8h-0.3"
+                      fill="#2D2DB3"
+                    ></path>
+                    <path
+                      d="M447.5 379.1l-13.8-8c0.1 0 0.2 0 0.3 0.1l13.8 8c-0.1-0.1-0.2-0.1-0.3-0.1"
+                      fill="#2C2CAD"
+                    ></path>
+                    <path
+                      d="M447.8 379.2l-13.8-8c0.1 0 0.2 0.1 0.3 0.1l13.8 8c-0.1-0.1-0.2-0.1-0.3-0.1"
+                      fill="#2A2AA8"
+                    ></path>
+                    <path
+                      d="M448.1 379.3l-13.8-8c0.1 0 0.2 0.1 0.3 0.1l13.8 8c-0.1-0.1-0.2-0.1-0.3-0.1"
+                      fill="#2929A3"
+                    ></path>
+                    <path
+                      d="M448.3 379.4l-13.8-8 13.8 8c0.1 0 0.1 0 0 0"
+                      fill="#28289E"
+                    ></path>
+                    <path
+                      d="M439.5 388.8l-13.8-8c0-0.3 0-0.7 0.1-1l13.8 8c-0.1 0.3-0.1 0.6-0.1 1"
+                      fill="#212185"
+                    ></path>
+                    <path
+                      d="M439.5 387.8l-13.8-8c0-0.2 0.1-0.5 0.1-0.7l13.8 8c0 0.2 0 0.4-0.1 0.7"
+                      fill="#23238A"
+                    ></path>
+                    <path
+                      d="M439.7 387l-13.8-8c0-0.2 0.1-0.4 0.1-0.6l13.8 8c0 0.2-0.1 0.4-0.1 0.6"
+                      fill="#24248F"
+                    ></path>
+                    <path
+                      d="M439.8 386.4l-13.8-8c0-0.2 0.1-0.4 0.2-0.5l13.8 8c-0.1 0.2-0.1 0.4-0.2 0.5"
+                      fill="#252594"
+                    ></path>
+                    <path
+                      d="M440 385.9l-13.8-8c0.1-0.2 0.1-0.3 0.2-0.5l13.8 8c-0.1 0.2-0.2 0.3-0.2 0.5"
+                      fill="#262699"
+                    ></path>
+                    <path
+                      d="M440.2 385.4l-13.8-8c0.1-0.2 0.1-0.3 0.2-0.5l13.8 8c-0.1 0.2-0.2 0.4-0.2 0.5"
+                      fill="#28289E"
+                    ></path>
+                    <path
+                      d="M440.3 384.9l-13.8-8c0.1-0.2 0.1-0.3 0.2-0.5l13.8 8c0 0.2-0.1 0.4-0.2 0.5"
+                      fill="#2929A3"
+                    ></path>
+                    <path
+                      d="M440.6 384.5l-13.8-8c0.1-0.1 0.1-0.3 0.2-0.4l13.8 8c-0.1 0.1-0.2 0.2-0.2 0.4"
+                      fill="#2A2AA8"
+                    ></path>
+                    <path
+                      d="M440.8 384.1l-13.8-8c0.1-0.1 0.1-0.3 0.2-0.4l13.8 8c-0.1 0.1-0.2 0.2-0.2 0.4"
+                      fill="#2C2CAD"
+                    ></path>
+                    <path
+                      d="M441 383.6l-13.8-8c0.1-0.1 0.2-0.3 0.3-0.4l13.8 8c-0.1 0.1-0.2 0.3-0.3 0.4"
+                      fill="#2D2DB3"
+                    ></path>
+                    <path
+                      d="M441.3 383.2l-13.8-8c0.1-0.2 0.2-0.3 0.3-0.5l13.8 8c-0.1 0.2-0.2 0.3-0.3 0.5"
+                      fill="#2E2EB8"
+                    ></path>
+                    <path
+                      d="M441.6 382.7l-13.8-8c0.1-0.2 0.2-0.3 0.3-0.5l13.8 8c-0.1 0.2-0.2 0.4-0.3 0.5"
+                      fill="#2F2FBD"
+                    ></path>
+                    <path
+                      d="M441.9 382.2l-13.8-8c0.1-0.2 0.3-0.3 0.4-0.5l13.8 8c-0.1 0.2-0.2 0.4-0.4 0.5"
+                      fill="#3131C2"
+                    ></path>
+                    <path
+                      d="M442.4 381.7l-13.8-8 0.6-0.6 13.8 8c-0.3 0.2-0.4 0.4-0.6 0.6"
+                      fill="#3232C7"
+                    ></path>
+                    <path
+                      d="M442.9 381.1l-13.8-8c0.5-0.5 1.1-1 1.7-1.4l13.8 8c-0.5 0.4-1.1 0.9-1.7 1.4"
+                      fill="#3333CC"
+                    ></path>
+                    <path
+                      d="M444.7 374.4l-13.8-8 2.8 1.6 13.8 8z"
+                      fill="#28289E"
+                    ></path>
+                    <path
+                      d="M436.1 386.5l-13.8-8 4.9-2.9 13.8 8.1z"
+                      fill="#3737DB"
+                    ></path>
+                    <path
+                      d="M462.2 387.2c0-0.1 0-0.1 0 0-0.1-0.1-0.2-0.1-0.3-0.1-0.1 0-0.2-0.1-0.3-0.1h-0.2-0.7-0.1H460.3c-0.1 0-0.3 0.1-0.5 0.1-0.1 0-0.1 0-0.2 0.1-0.1 0-0.1 0-0.2 0.1-0.1 0-0.2 0-0.2 0.1-0.2 0.1-0.5 0.2-0.7 0.4l-19 11v-2l-10.3-6 7-4-13.8-8-19 11c-0.3 0.2-0.7 0.4-1 0.7l-0.3 0.3c-0.2 0.1-0.3 0.3-0.5 0.4l-0.2 0.2-0.2 0.2-0.2 0.2c-0.1 0.2-0.3 0.3-0.4 0.5 0 0.1-0.1 0.1-0.1 0.2 0 0 0 0.1-0.1 0.1 0 0.1-0.1 0.1-0.1 0.2-0.1 0.1-0.2 0.3-0.3 0.5-0.1 0.1-0.2 0.3-0.3 0.4-0.1 0.1-0.1 0.3-0.2 0.4-0.1 0.1-0.2 0.3-0.2 0.4-0.1 0.1-0.1 0.3-0.2 0.4-0.1 0.2-0.1 0.3-0.2 0.5s-0.1 0.3-0.2 0.5c0 0.1 0 0.2-0.1 0.2v0.1c0 0.1 0 0.1-0.1 0.2-0.1 0.2-0.1 0.4-0.1 0.6 0 0.1 0 0.2-0.1 0.4v0.4c0 0.3-0.1 0.7-0.1 1 0 1.6 0.6 2.8 1.5 3.3l13.8 8c-0.9-0.5-1.5-1.7-1.5-3.3 0-0.4 0-0.8 0.1-1.2v-0.2c0.1-0.4 0.2-0.8 0.3-1.1v-0.1c0.1-0.4 0.3-0.8 0.5-1.2l0.6-1.2c0.2-0.4 0.5-0.8 0.7-1.1 0 0 0-0.1 0.1-0.1 0.2-0.3 0.5-0.6 0.8-0.9l0.2-0.2c0.2-0.2 0.4-0.4 0.7-0.6l0.3-0.3c0.3-0.3 0.6-0.5 1-0.7l8.6-5v14l5.1 2.9-5.1-2.9-22.3 12.9c-0.3 0.2-0.7 0.4-1 0.7l-0.3 0.3c-0.2 0.1-0.3 0.3-0.5 0.4l-0.2 0.2-0.2 0.2-0.2 0.2c-0.1 0.2-0.3 0.3-0.4 0.5 0 0.1-0.1 0.1-0.1 0.2 0 0 0 0.1-0.1 0.1 0 0.1-0.1 0.1-0.1 0.2-0.1 0.1-0.2 0.3-0.3 0.5-0.1 0.1-0.2 0.3-0.3 0.4-0.1 0.1-0.1 0.2-0.2 0.4-0.1 0.1-0.2 0.3-0.2 0.4-0.1 0.1-0.1 0.3-0.2 0.4-0.1 0.2-0.1 0.3-0.2 0.5s-0.1 0.3-0.2 0.5c0 0.1 0 0.2-0.1 0.2v0.1c0 0.1 0 0.1-0.1 0.2-0.1 0.2-0.1 0.4-0.1 0.6 0 0.1 0 0.2-0.1 0.4v0.4c0 0.3-0.1 0.7-0.1 1 0 1.6 0.6 2.8 1.5 3.3l13.8 8c-0.9-0.5-1.5-1.7-1.5-3.3 0-0.4 0-0.8 0.1-1.2v-0.2c0.1-0.4 0.2-0.8 0.3-1.1v-0.1c0.1-0.4 0.3-0.8 0.5-1.2l0.6-1.2c0.2-0.4 0.5-0.8 0.7-1.1 0 0 0-0.1 0.1-0.1 0.2-0.3 0.5-0.6 0.8-0.9l0.2-0.2c0.2-0.2 0.4-0.4 0.7-0.6l0.3-0.3c0.3-0.3 0.6-0.5 1-0.7l8.6-5v15.7c0 1.6 0.6 2.8 1.5 3.3l13.8 8c-0.9-0.5-1.5-1.7-1.5-3.3l-0.1-19.7-10.4-6 10.3-6v-12.1l10.5 6.1 22.4-12.9c0.3-0.2 0.6-0.3 1-0.4 0.1 0 0.1 0 0.2-0.1 0.3-0.1 0.6-0.2 0.9-0.2h0.9c0.3 0.1 0.5 0.2 0.7 0.3l-14.1-8.4zM403.5 366.5c0 0.1 0.1 0.3 0.1 0.4l0.3 0.6c0.1 0.1 0.1 0.2 0.2 0.3 0.2 0.3 0.4 0.5 0.7 0.6l13.8 8c-0.3-0.2-0.5-0.4-0.7-0.6-0.1-0.1-0.1-0.2-0.2-0.3l-0.3-0.6c0-0.1-0.1-0.3-0.1-0.4-0.1-0.2-0.1-0.5-0.1-0.8v-0.4-0.9-0.4-0.2c0.1-0.4 0.1-0.7 0.3-1.1v-0.1c0.1-0.4 0.3-0.8 0.5-1.3 0.2-0.4 0.4-0.9 0.7-1.3 0.2-0.4 0.5-0.8 0.8-1.2 0 0 0-0.1 0.1-0.1 0.3-0.3 0.5-0.6 0.8-0.9l0.2-0.2 0.6-0.6 0.3-0.3c0.3-0.2 0.6-0.5 0.9-0.6 0.3-0.2 0.6-0.3 0.9-0.4 0.1 0 0.1 0 0.2-0.1 0.3-0.1 0.6-0.2 0.8-0.2h1c0.3 0.1 0.6 0.1 0.8 0.3l18.7 10.7 1.2-2.1 7.3 4.3 19-11c0.3-0.2 0.6-0.3 1-0.4 0.1 0 0.1 0 0.2-0.1 0.3-0.1 0.6-0.2 0.9-0.2h0.9c0.3 0.1 0.5 0.2 0.8 0.3l-13.8-8c-0.1 0-0.2-0.1-0.3-0.1-0.1 0-0.2-0.1-0.3-0.1h-0.2-0.7-0.1H460.4c-0.1 0-0.3 0.1-0.5 0.1-0.1 0-0.1 0-0.2 0.1-0.1 0-0.1 0-0.2 0.1-0.1 0-0.2 0-0.2 0.1-0.2 0.1-0.5 0.2-0.7 0.4l-6.1 3.5 10.9-18.9c0.2-0.4 0.5-0.8 0.8-1.2 0 0 0-0.1 0.1-0.1 0.3-0.3 0.5-0.6 0.8-0.9l0.2-0.2 0.6-0.6 0.3-0.3c0.3-0.2 0.6-0.5 0.9-0.6 0.3-0.2 0.6-0.3 0.9-0.4 0.1 0 0.1 0 0.2-0.1 0.3-0.1 0.6-0.2 0.8-0.2h1c0.3 0.1 0.6 0.1 0.8 0.3l-13.8-8c-0.1 0-0.2-0.1-0.3-0.1-0.1 0-0.2-0.1-0.3-0.1-0.1 0-0.2 0-0.3-0.1h-0.8-0.1-0.1c-0.2 0-0.3 0.1-0.5 0.1-0.1 0-0.2 0.1-0.3 0.1-0.1 0-0.1 0-0.2 0.1-0.1 0-0.1 0-0.2 0.1-0.2 0.1-0.5 0.2-0.7 0.4l-0.9 0.6-0.3 0.3c-0.2 0.1-0.3 0.3-0.5 0.5l-0.1 0.1-0.2 0.2-0.3 0.3c-0.1 0.2-0.3 0.3-0.4 0.5l-0.1 0.1s0 0.1-0.1 0.1c-0.1 0.1-0.1 0.2-0.2 0.2-0.1 0.1-0.2 0.3-0.3 0.4-0.1 0.1-0.2 0.3-0.3 0.4v0.1l-18.6 32.2-18.7-10.7c-0.1 0-0.2-0.1-0.3-0.1-0.1 0-0.2-0.1-0.3-0.1-0.1 0-0.2 0-0.3-0.1h-0.8-0.1-0.1c-0.2 0-0.3 0.1-0.5 0.1-0.1 0-0.2 0.1-0.3 0.1-0.1 0-0.1 0-0.2 0.1-0.1 0-0.1 0-0.2 0.1-0.2 0.1-0.5 0.2-0.7 0.4l-0.9 0.6-0.3 0.3c-0.2 0.1-0.3 0.3-0.5 0.4l-0.1 0.1-0.2 0.2-0.3 0.3c-0.1 0.2-0.3 0.3-0.4 0.5l-0.1 0.1s0 0.1-0.1 0.1c-0.1 0.1-0.1 0.2-0.2 0.2-0.1 0.1-0.2 0.3-0.3 0.4-0.1 0.1-0.2 0.3-0.3 0.4-0.1 0.1-0.2 0.3-0.2 0.4-0.1 0.1-0.2 0.3-0.2 0.4-0.1 0.1-0.1 0.3-0.2 0.4-0.1 0.1-0.1 0.3-0.2 0.4-0.1 0.2-0.1 0.3-0.2 0.5 0 0.1-0.1 0.2-0.1 0.3v0.2c-0.1 0.2-0.1 0.4-0.1 0.6 0 0.1 0 0.3-0.1 0.4v1.9c-0.1 0.5 0 0.8 0.1 1z"
+                      fill="#ACC5EA"
+                    ></path>
+                    <path
+                      d="M472.3 395.5L450 408.4v12l22.4-12.9c2.9-1.7 5.2-5.7 5.2-9-0.1-3.3-2.4-4.6-5.3-3z"
+                      fill="#FFFFFF"
+                    ></path>
+                    <path
+                      d="M449.9 382.8v7.7l22.4-12.9c2.9-1.7 5.2-5.7 5.2-9s-2.3-4.6-5.2-3l-19 11 17.4-30.2c2-3.5 2-7.3 0-8.5-1-0.6-2.4-0.4-3.7 0.4-1.3 0.8-2.7 2.1-3.7 3.9l-18.6 32.2-18.7-10.7c-1-0.6-2.4-0.4-3.7 0.4-1.3 0.8-2.7 2.1-3.7 3.9-2 3.5-2 7.3 0 8.5l17.5 10-19 11c-2.9 1.7-5.2 5.7-5.2 9s2.4 4.6 5.2 3l22.3-12.9 0.1 18v12l0.1 19.7c0 3.3 2.4 4.6 5.2 3 2.9-1.7 5.2-5.7 5.2-9l-0.1-19.7v-12l-0.1-18 0.1-7.8z m-10.4 6c0-1.7 0.6-3.5 1.5-5.1-0.9 1.6-1.5 3.4-1.5 5.1z m8.9-9.4c0.7 0.4 1.2 1.2 1.4 2.2-0.2-1-0.7-1.8-1.4-2.2z"
+                      fill="#FFFFFF"
+                    ></path>
+                    <path
+                      d="M417.2 427.4c-2.9 1.7-5.2 5.7-5.2 9s2.4 4.6 5.2 3l22.3-12.9v-12l-22.3 12.9z"
+                      fill="#FFFFFF"
+                    ></path>
+                    <path
+                      d="M660.6 452.8c-0.2-0.1-0.3-0.2-0.5-0.3l-2.4-1.2-0.6-0.3c-0.5-0.2-0.9-0.4-1.4-0.6-0.3-0.1-0.6-0.2-0.9-0.4-0.3-0.1-0.5-0.2-0.8-0.3-0.9-0.3-1.9-0.7-2.9-1h-0.2c-0.9-0.3-1.9-0.5-2.9-0.7-0.3-0.1-0.6-0.1-0.9-0.2-0.3-0.1-0.6-0.1-0.9-0.2-0.5-0.1-1.1-0.2-1.7-0.2-0.2 0-0.4-0.1-0.7-0.1-0.9-0.1-1.9-0.2-2.9-0.3H635.2c-0.5 0-1.1 0.1-1.6 0.1-0.4 0-0.8 0-1.1 0.1-1.2 0.1-2.3 0.2-3.5 0.4h-0.1c-1.3 0.2-2.6 0.4-3.9 0.7l-1.2 0.3-2.4 0.6c-0.1 0-0.2 0.1-0.2 0.1-1.5 0.4-3.1 0.9-4.6 1.4l-0.9 0.3c-1.3 0.4-2.5 0.9-3.8 1.4-0.2 0.1-0.3 0.1-0.5 0.2-1 0.4-2.1 0.9-3.1 1.4-0.1 0.1-0.3 0.1-0.4 0.2-1.2 0.5-2.3 1.1-3.5 1.7-0.3 0.2-0.7 0.4-1 0.5-1.3 0.7-2.6 1.4-4 2.2-1.4 0.8-2.8 1.6-4.1 2.5-0.4 0.3-0.9 0.6-1.3 0.9-0.9 0.6-1.8 1.2-2.8 1.8-0.5 0.4-1 0.7-1.5 1.1-0.8 0.6-1.7 1.2-2.5 1.8l-1.5 1.2c-0.8 0.6-1.7 1.3-2.5 2-0.5 0.4-1 0.8-1.4 1.2-1 0.8-1.9 1.6-2.8 2.4-0.3 0.3-0.7 0.6-1.1 0.9-1.3 1.1-2.5 2.3-3.8 3.4-0.3 0.2-0.5 0.5-0.8 0.8-0.8 0.8-1.7 1.6-2.5 2.4l-0.4 0.4c-1.5 1.5-2.9 3-4.4 4.5-0.1 0.1-0.1 0.2-0.2 0.2-1.4 1.5-2.7 3-4 4.5l-0.4 0.4-1.5 1.8c-0.5 0.6-1.1 1.3-1.6 1.9-0.7 0.8-1.3 1.6-2 2.5-0.5 0.6-1 1.3-1.5 1.9-0.1 0.1-0.2 0.2-0.3 0.4-0.2 0.2-0.3 0.4-0.5 0.6-1.6 2.1-3.2 4.3-4.8 6.5-0.2 0.2-0.3 0.4-0.5 0.7-0.1 0.1-0.1 0.2-0.2 0.3-1.5 2.1-2.9 4.3-4.4 6.5-0.1 0.2-0.3 0.4-0.4 0.6-0.2 0.3-0.4 0.6-0.6 1-1.1 1.8-2.2 3.6-3.3 5.5-0.2 0.3-0.4 0.6-0.5 0.9-0.1 0.1-0.1 0.2-0.2 0.3-1.2 2.1-2.4 4.2-3.6 6.4-0.1 0.2-0.2 0.3-0.3 0.5-0.2 0.4-0.4 0.7-0.5 1.1-0.9 1.7-1.8 3.4-2.6 5.2-0.2 0.4-0.4 0.7-0.5 1.1-0.1 0.2-0.2 0.4-0.3 0.7-1 2.2-2.1 4.4-3 6.6 0 0.1-0.1 0.1-0.1 0.2-0.1 0.2-0.2 0.5-0.3 0.7-0.9 2-1.7 4-2.5 6-0.1 0.3-0.3 0.6-0.4 1-0.1 0.3-0.2 0.5-0.3 0.8-0.9 2.4-1.8 4.8-2.6 7.2v0.1c-0.5 1.6-1 3.2-1.5 4.7-0.1 0.4-0.3 0.9-0.4 1.3-0.3 0.9-0.5 1.8-0.8 2.7-0.1 0.3-0.1 0.6-0.2 0.9-0.2 0.7-0.4 1.5-0.6 2.2-0.3 1-0.5 2-0.7 3-0.2 0.8-0.3 1.5-0.5 2.3-0.1 0.5-0.2 1-0.4 1.6-0.1 0.4-0.1 0.7-0.2 1.1-0.2 1.1-0.4 2.3-0.6 3.4-0.1 0.8-0.3 1.6-0.4 2.3-0.2 1.2-0.4 2.3-0.5 3.5-0.1 0.5-0.2 1.1-0.2 1.6 0 0.2-0.1 0.5-0.1 0.7-0.1 0.5-0.1 1.1-0.2 1.6l-0.3 3.3c-0.1 0.6-0.1 1.1-0.1 1.7-0.1 1.1-0.1 2.2-0.2 3.3 0 0.5-0.1 1-0.1 1.5-0.1 1.6-0.1 3.2-0.1 4.7 0.1 27.1 9.7 46.2 25.1 55.2l14.8 8.6c-15.5-9-25-28.1-25.1-55.2 0-1.6 0-3.1 0.1-4.7 0-0.5 0-1 0.1-1.5 0.1-1.1 0.1-2.2 0.2-3.3 0-0.6 0.1-1.1 0.1-1.7l0.3-3.3c0.1-0.5 0.1-1.1 0.2-1.6 0.1-0.8 0.2-1.6 0.3-2.3 0.2-1.2 0.3-2.3 0.5-3.5 0.1-0.8 0.3-1.6 0.4-2.3 0.2-1.1 0.4-2.2 0.6-3.4l0.6-2.7c0.2-0.8 0.3-1.5 0.5-2.3 0.2-1 0.5-2 0.7-3 0.2-0.7 0.4-1.5 0.6-2.2 0.3-1.2 0.7-2.4 1-3.6 0.1-0.4 0.3-0.9 0.4-1.3 0.5-1.6 1-3.3 1.6-4.9 0.8-2.4 1.7-4.8 2.6-7.2 0.2-0.6 0.5-1.2 0.7-1.8 0.8-2 1.6-4 2.5-6 0.1-0.3 0.2-0.6 0.4-0.9l3-6.6c0.3-0.6 0.6-1.1 0.8-1.7 0.8-1.7 1.7-3.5 2.6-5.2 0.3-0.5 0.5-1.1 0.8-1.6 1.2-2.2 2.3-4.3 3.6-6.4 0.2-0.4 0.5-0.8 0.7-1.2 1.1-1.8 2.2-3.7 3.3-5.5 0.3-0.5 0.7-1.1 1-1.6 1.4-2.2 2.9-4.4 4.4-6.5 0.2-0.3 0.5-0.6 0.7-1 1.6-2.2 3.2-4.4 4.8-6.5 0.2-0.3 0.5-0.7 0.7-1 0.5-0.7 1-1.3 1.6-2 0.7-0.8 1.3-1.6 2-2.4 0.5-0.7 1.1-1.3 1.6-1.9 0.6-0.8 1.3-1.5 1.9-2.2 1.3-1.5 2.7-3 4.1-4.5 0.1-0.1 0.1-0.2 0.2-0.2 1.4-1.5 2.9-3 4.4-4.5 0.9-0.9 1.9-1.8 2.8-2.8 0.3-0.2 0.5-0.5 0.8-0.8 1.3-1.2 2.5-2.3 3.8-3.4 0.3-0.3 0.7-0.6 1-0.9 0.9-0.8 1.9-1.6 2.8-2.4 0.5-0.4 1-0.8 1.4-1.2 0.8-0.7 1.7-1.3 2.5-2l1.5-1.2c0.8-0.6 1.7-1.2 2.5-1.8 0.5-0.4 1-0.7 1.5-1.1 0.9-0.6 1.8-1.2 2.8-1.8 0.4-0.3 0.9-0.6 1.3-0.9 1.4-0.9 2.7-1.7 4.1-2.5 1.3-0.8 2.7-1.5 4-2.2 0.3-0.2 0.7-0.4 1-0.5 1.2-0.6 2.3-1.2 3.5-1.7 0.1-0.1 0.3-0.1 0.4-0.2 1.2-0.6 2.4-1.1 3.6-1.6 1.3-0.5 2.5-1 3.8-1.5l0.9-0.3c1.6-0.5 3.1-1 4.6-1.4 0.9-0.2 1.8-0.5 2.7-0.7 0.4-0.1 0.8-0.2 1.3-0.3 1.3-0.3 2.6-0.5 3.9-0.7h0.1c1.2-0.2 2.3-0.3 3.5-0.4 0.4 0 0.8-0.1 1.1-0.1 0.8-0.1 1.7-0.1 2.5-0.1h4.5c1.1 0.1 2.2 0.2 3.2 0.3 0.2 0 0.4 0.1 0.7 0.1 0.9 0.1 1.7 0.3 2.6 0.4 0.3 0.1 0.6 0.1 0.9 0.2 1 0.2 1.9 0.4 2.9 0.7h0.2c1 0.3 2 0.6 2.9 1 0.3 0.1 0.5 0.2 0.8 0.3 0.8 0.3 1.5 0.6 2.3 1l0.6 0.3c1 0.5 1.9 1 2.8 1.5l-14.9-8.5z"
+                      fill="#C68620"
+                    ></path>
+                    <path
+                      d="M614.2 467.4c47.5-27.4 86.2-5.4 86.4 49.2 0.2 54.6-38.3 121.2-85.8 148.6-47.5 27.4-86.2 5.4-86.3-49.2s38.1-121.1 85.7-148.6z"
+                      fill="#FFCD2E"
+                    ></path>
+                    <path
+                      d="M593.3 581.3c17.9-10.4 43.5-25 44.8-25.8 3.4-2 6.2-0.1 6.2 4.1 0 4.2-2.7 9.3-6.1 11.3l-40.8 23.5v7.7c0 4.2-2.7 9.3-6.1 11.2-1.7 1-3.2 1-4.3 0.2l-12.3-8.3c-1.1-0.8-1.9-2.2-1.8-4.4 0.1-4 2.3-8.7 4.7-10.4 0 0 6.7-3.9 15.7-9.1zM625.7 515.8c1.7-1 3.2-1 4.3-0.3l12.3 8.3c1.1 0.8 1.9 2.2 1.8 4.4-0.1 4-2.4 8.7-4.7 10.4 0 0.1-6.8 4-15.7 9.2-17.9 10.4-43.5 25-44.8 25.8-3.4 2-6.1 0.1-6.2-4.1 0-4.3 2.7-9.3 6.1-11.2l40.8-23.5v-7.7c0-4.3 2.8-9.3 6.1-11.3z"
+                      fill="#C68620"
+                    ></path>
+                    <path
+                      d="M603 615.1l-10.8-6.3c-0.1 0-0.1-0.1-0.2-0.1l10.8 6.3c0.1 0 0.1 0.1 0.2 0.1"
+                      fill="#858585"
+                    ></path>
+                    <path
+                      d="M645.7 558.9c-0.1-0.1-0.2-0.1-0.4-0.2-0.1 0-0.2-0.1-0.3-0.1h-0.2-0.1-0.9-0.1-0.4c-0.2 0-0.3 0.1-0.5 0.1-0.1 0-0.1 0-0.2 0.1-0.1 0-0.1 0-0.2 0.1-0.1 0-0.2 0.1-0.3 0.1-0.3 0.1-0.5 0.2-0.8 0.4-1.3 0.8-26.9 15.4-44.8 25.8-2.1 1.2-4.1 2.3-5.9 3.4-0.1 0-0.1 0.1-0.2 0.1-0.2 0.1-0.3 0.2-0.5 0.3-0.8 0.5-1.6 0.9-2.3 1.3-0.2 0.1-0.3 0.2-0.5 0.3l-0.6 0.3c-0.2 0.1-0.4 0.3-0.6 0.4-0.2 0.1-0.3 0.2-0.4 0.3-0.2 0.1-0.4 0.2-0.5 0.3l-0.6 0.3c-0.1 0.1-0.2 0.1-0.3 0.1-0.2 0.1-0.5 0.3-0.7 0.4-0.1 0-0.1 0.1-0.2 0.1-0.2 0.1-0.4 0.2-0.5 0.3-0.1 0.1-0.2 0.1-0.3 0.2-0.2 0.1-0.3 0.2-0.4 0.3-0.1 0-0.1 0.1-0.2 0.1-0.1 0.1-0.2 0.1-0.3 0.2-0.1 0-0.1 0.1-0.2 0.1-0.1 0.1-0.2 0.1-0.2 0.1l-0.1 0.1c-0.1 0-0.1 0.1-0.1 0.1h-0.1c-0.2 0.2-0.5 0.4-0.7 0.6l-0.1 0.1-0.1 0.1-0.2 0.2c-0.1 0.1-0.2 0.3-0.4 0.4-0.1 0.1-0.1 0.2-0.2 0.2 0 0 0 0.1-0.1 0.1l-0.1 0.1c-0.1 0.2-0.2 0.3-0.3 0.5-0.1 0.2-0.2 0.3-0.3 0.5v0.2c-0.1 0.1-0.2 0.3-0.2 0.4l-0.3 0.6c0 0.1-0.1 0.2-0.1 0.3 0 0 0 0.1-0.1 0.1 0 0.1-0.1 0.2-0.1 0.2-0.1 0.2-0.2 0.5-0.3 0.7 0 0.1-0.1 0.2-0.1 0.4 0 0.1 0 0.1-0.1 0.2 0 0.1-0.1 0.1-0.1 0.2l-0.3 0.9c0 0.1 0 0.2-0.1 0.2 0 0.1 0 0.2-0.1 0.3 0 0.2-0.1 0.3-0.1 0.5s-0.1 0.4-0.1 0.6c0 0.1-0.1 0.3-0.1 0.4v0.2c-0.1 0.4-0.1 0.8-0.1 1.2-0.1 2.2 0.7 3.7 1.8 4.4l12.3 8.3 11.5 6.7-12.3-8.3c-1.1-0.8-1.9-2.2-1.8-4.4 0-0.5 0.1-0.9 0.1-1.4 0-0.1 0-0.3 0.1-0.4 0.1-0.4 0.1-0.7 0.2-1.1 0-0.1 0-0.2 0.1-0.3 0.1-0.4 0.3-0.9 0.4-1.3 0-0.1 0-0.1 0.1-0.2 0.2-0.4 0.3-0.9 0.5-1.3 0 0 0-0.1 0.1-0.1 0.2-0.4 0.4-0.9 0.6-1.3v-0.1c0.2-0.4 0.5-0.8 0.7-1.2 0 0 0-0.1 0.1-0.1 0.2-0.3 0.5-0.6 0.8-0.9l0.1-0.1c0.3-0.3 0.6-0.5 0.8-0.7l0.1-0.1h0.1l0.1-0.1s0.1 0 0.1-0.1c0.1 0 0.1-0.1 0.2-0.1s0.1-0.1 0.2-0.1 0.2-0.1 0.3-0.2c0.1-0.1 0.2-0.1 0.3-0.2 0.1-0.1 0.2-0.1 0.4-0.2 0.1-0.1 0.2-0.1 0.3-0.2 0.1-0.1 0.3-0.1 0.4-0.2 0.1-0.1 0.3-0.2 0.4-0.2 0.1-0.1 0.3-0.2 0.4-0.2 0.2-0.1 0.4-0.2 0.5-0.3 0.1-0.1 0.3-0.2 0.4-0.3 0.1-0.1 0.3-0.2 0.4-0.2l0.6-0.3c0.5-0.3 1.1-0.7 1.7-1 0.3-0.2 0.6-0.3 0.8-0.5 0.1-0.1 0.3-0.2 0.4-0.2 0.3-0.2 0.6-0.3 0.9-0.5 0.2-0.1 0.4-0.2 0.6-0.4 0.2-0.1 0.4-0.3 0.7-0.4 0.2-0.1 0.4-0.2 0.6-0.4 0.7-0.4 1.5-0.8 2.2-1.3 0.8-0.5 1.7-1 2.5-1.5 17.9-10.4 43.5-25 44.8-25.8 0.4-0.2 0.7-0.4 1.1-0.5 0.1 0 0.1 0 0.2-0.1 0.3-0.1 0.7-0.2 1-0.2h0.1c0.3 0 0.7 0 1 0.1h0.1l0.9 0.3-11.3-6.6zM633.3 519.2c-0.1-0.1-0.2-0.1-0.4-0.2-0.1 0-0.2-0.1-0.3-0.1h-0.2-0.1-0.9-0.1-0.4c-0.2 0-0.3 0.1-0.5 0.1-0.1 0-0.1 0-0.2 0.1-0.1 0-0.1 0-0.2 0.1-0.1 0-0.2 0.1-0.3 0.1-0.3 0.1-0.5 0.2-0.8 0.4-0.4 0.2-0.8 0.5-1.1 0.8l-0.3 0.3-0.4 0.4-0.4 0.4c0 0.1-0.1 0.1-0.1 0.1l-0.1 0.1c-0.2 0.2-0.3 0.4-0.5 0.6-0.1 0.2-0.3 0.4-0.4 0.5-0.1 0.2-0.2 0.3-0.3 0.5-0.1 0.2-0.2 0.4-0.3 0.5-0.1 0.1-0.1 0.2-0.2 0.4v0.1s0 0.1-0.1 0.1l-0.3 0.6-0.3 0.6c0 0.1-0.1 0.2-0.1 0.2v0.1c0 0.1-0.1 0.2-0.1 0.2-0.1 0.2-0.2 0.4-0.2 0.6-0.1 0.2-0.1 0.4-0.2 0.7-0.1 0.3-0.1 0.5-0.2 0.8 0 0.2-0.1 0.4-0.1 0.6V529.2c-0.1 0.5-0.1 1-0.1 1.4v7.7l-40.8 23.5 11.5 6.7 40.8-23.5v-7.7c0-0.5 0-1 0.1-1.6v-0.2l0.3-1.5c0.1-0.5 0.3-1 0.5-1.6v-0.1c0.2-0.5 0.4-1 0.7-1.5v-0.1c0.3-0.5 0.6-1 0.9-1.4 0.3-0.4 0.6-0.9 1-1.2 0-0.1 0.1-0.1 0.1-0.1 0.3-0.3 0.5-0.6 0.8-0.8l0.3-0.3c0.4-0.3 0.7-0.6 1.1-0.8 0.4-0.2 0.7-0.4 1.1-0.5 0.1 0 0.1 0 0.2-0.1 0.3-0.1 0.7-0.2 1-0.2h0.1c0.3 0 0.6 0 0.9 0.1h0.1l0.9 0.3-11.4-6.5zM581.1 562.9l-0.3 0.3-0.4 0.4-0.4 0.4c0 0.1-0.1 0.1-0.1 0.2l-0.1 0.1c-0.2 0.2-0.3 0.4-0.5 0.6-0.1 0.2-0.3 0.4-0.4 0.5-0.1 0.2-0.2 0.3-0.3 0.5-0.1 0.2-0.2 0.4-0.3 0.5-0.1 0.1-0.1 0.2-0.2 0.4v0.1s0 0.1-0.1 0.1l-0.3 0.6-0.3 0.6c0 0.1-0.1 0.2-0.1 0.2v0.1c0 0.1-0.1 0.2-0.1 0.2-0.1 0.2-0.2 0.4-0.2 0.6-0.1 0.2-0.1 0.4-0.2 0.7-0.1 0.3-0.1 0.5-0.2 0.8 0 0.2-0.1 0.4-0.1 0.6V571.7c-0.1 0.5-0.1 1-0.1 1.4 0 2.2 0.8 3.8 2 4.5l11.5 6.7c-1.2-0.7-2-2.3-2-4.5 0-0.5 0-1 0.1-1.6v-0.2l0.3-1.5c0.1-0.5 0.3-1 0.5-1.6v-0.1c0.2-0.5 0.4-1 0.7-1.5v-0.1c0.3-0.5 0.6-1 0.9-1.4 0.3-0.4 0.6-0.9 1-1.2 0-0.1 0.1-0.1 0.1-0.2 0.3-0.3 0.5-0.6 0.8-0.8l0.3-0.3c0.4-0.3 0.7-0.6 1.1-0.8l-11.5-6.7c-0.3 0.5-0.7 0.8-1.1 1.1z"
+                      fill="#E8CFAC"
+                    ></path>
+                    <path
+                      d="M608.2 591.8c17.9-10.4 43.5-25 44.8-25.8 3.4-2 6.2-0.1 6.2 4.1 0 4.2-2.7 9.3-6.1 11.3l-40.8 23.5v7.7c0 4.2-2.7 9.3-6.1 11.2-1.7 1-3.2 1-4.3 0.2l-12.3-8.3c-1.1-0.8-1.9-2.2-1.8-4.4 0.1-4 2.3-8.7 4.7-10.4 0 0 6.7-3.9 15.7-9.1z"
+                      fill="#FFFFFF"
+                    ></path>
+                    <path
+                      d="M640.6 526.3c1.7-1 3.2-1 4.3-0.3l12.3 8.3c1.1 0.8 1.9 2.2 1.8 4.4-0.1 4-2.4 8.7-4.7 10.4 0 0.1-6.8 4-15.7 9.2-17.9 10.4-43.5 25-44.8 25.8-3.4 2-6.1 0.1-6.2-4.1 0-4.3 2.7-9.3 6.1-11.2l40.8-23.5v-7.7c0-4.3 2.8-9.3 6.1-11.3z"
+                      fill="#FFFFFF"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <h3
+                class="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors"
+              >
+                Ứng Dụng Mobile
+              </h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Phát triển app iOS/Android native và cross-platform với hiệu
+                năng cao và trải nghiệm mượt mà.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <svg
+                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>iOS & Android</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <svg
+                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>UI/UX hiện đại</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <svg
+                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>Hiệu năng tối ưu</span>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+              >
+                Tìm hiểu thêm
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Service 4: Dịch vụ SEO -->
+            <div
+              class="group bg-white border border-gray-200 rounded-2xl p-6 md:p-8 hover:shadow-2xl hover:border-primary transition-all duration-300 hover:-translate-y-2"
+            >
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform p-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  id="websearch"
+                  viewBox="0 0 214.6279 198.1416"
+                  enable-background="new 0 0 214.6279 198.1416"
+                  xml:space="preserve"
+                  fill="#000000"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        fill="#5CB0FF"
+                        d="M171.748,142.3193c0-15.4375-12.5625-28-28-28s-28,12.5625-28,28s12.5625,28,28,28 S171.748,157.7568,171.748,142.3193z"
+                      ></path>
+                      <path
+                        fill="#1C71DA"
+                        d="M95.748,166.3193v-76h42.989c0.0146,0.7878,0.0696,1.5579,0.0696,2.3516c0,2.2109,1.7891,4,4,4 s4-1.7891,4-4c0-0.7937-0.0603-1.5632-0.0745-2.3516h25.0159h5.6484h2.3516c0-46.3164-37.6836-84-84-84h-8v0.4053 c-42.5754,4.0447-76,39.9785-76,83.5947c0,46.3164,37.6836,84,84,84c2.2109,0,4-1.7891,4-4S97.959,166.3193,95.748,166.3193z M87.748,164.9949c-19.9287-6.438-35.0586-36.3945-35.0586-72.324c0-0.7937,0.0549-1.5637,0.0696-2.3516h34.989V164.9949z M53.1655,82.3193C55.75,51.1135,69.7729,26.157,87.748,20.3506v61.9688H53.1655z M95.748,82.3193v-63.293 c21.6829,0,39.6248,27.5808,42.5825,63.293H95.748z M171.3181,82.3193h-24.9685c-2.3884-29.9812-14.96-54.8911-31.9993-65.6013 C144.7681,24.4146,167.9641,50.417,171.3181,82.3193z M77.1458,16.718C60.1064,27.4282,47.5349,52.3381,45.1465,82.3193H20.178 C23.532,50.417,46.728,24.4146,77.1458,16.718z M19.748,90.3193h25.0159c-0.0142,0.7883-0.0745,1.5579-0.0745,2.3516 c0,28.5327,9.217,53.6572,23.1233,68.2603C39.7031,149.769,19.748,122.3567,19.748,90.3193z"
+                      ></path>
+                      <path
+                        fill="#1C71DA"
+                        d="M191.5137,184.4287l-19.665-19.665c4.9307-6.1609,7.8994-13.9573,7.8994-22.4443 c0-19.8516-16.1484-36-36-36s-36,16.1484-36,36s16.1484,36,36,36c8.4871,0,16.2834-2.9688,22.4443-7.8994l19.665,19.665 L191.5137,184.4287z M115.748,142.3193c0-15.4375,12.5625-28,28-28s28,12.5625,28,28s-12.5625,28-28,28 S115.748,157.7568,115.748,142.3193z"
+                      ></path>
+                    </g>
+                    <path
+                      fill="#FF5D5D"
+                      d="M4,22.1416c-1.0234,0-2.0479-0.3906-2.8281-1.1719c-1.5625-1.5615-1.5625-4.0947,0-5.6562L15.3145,1.1719 c1.5625-1.5625,4.0957-1.5625,5.6562,0c1.5625,1.5615,1.5625,4.0947,0,5.6562L6.8281,20.9697 C6.0469,21.751,5.0234,22.1416,4,22.1416z"
+                    ></path>
+                    <path
+                      fill="#FF5D5D"
+                      d="M18.1426,22.1416c-1.0234,0-2.0469-0.3906-2.8281-1.1719L1.1719,6.8281 c-1.5625-1.5615-1.5625-4.0947,0-5.6562c1.5605-1.5625,4.0938-1.5625,5.6562,0l14.1426,14.1416 c1.5625,1.5615,1.5625,4.0947,0,5.6562C20.1904,21.751,19.166,22.1416,18.1426,22.1416z"
+                    ></path>
+                    <path
+                      fill="#00D40B"
+                      d="M14,198.1416c-7.7197,0-14-6.2803-14-14s6.2803-14,14-14s14,6.2803,14,14S21.7197,198.1416,14,198.1416z M14,178.1416c-3.3086,0-6,2.6914-6,6s2.6914,6,6,6s6-2.6914,6-6S17.3086,178.1416,14,178.1416z"
+                    ></path>
+                    <path
+                      fill="#FFC504"
+                      d="M199.3145,56.7695c-1.0605,0-2.0781-0.4219-2.8281-1.1719l-11.3145-11.3145 c-0.75-0.75-1.1719-1.7676-1.1719-2.8281s0.4219-2.0781,1.1719-2.8281l11.3145-11.3135c1.5625-1.5625,4.0938-1.5625,5.6562,0 l11.3135,11.3135c1.5625,1.5615,1.5625,4.0947,0,5.6562l-11.3135,11.3145C201.3926,56.3477,200.375,56.7695,199.3145,56.7695z M193.6572,41.4551l5.6572,5.6572l5.6572-5.6572l-5.6572-5.6572L193.6572,41.4551z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <h3
+                class="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors"
+              >
+                Dịch Vụ SEO
+              </h3>
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Tối ưu hóa công cụ tìm kiếm giúp website của bạn đạt thứ hạng
+                cao trên Google, tăng traffic tự nhiên.
+              </p>
+              <ul class="space-y-2 mb-6">
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <svg
+                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>SEO On-page</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <svg
+                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>SEO Off-page</span>
+                </li>
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <svg
+                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>Báo cáo chi tiết</span>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+              >
+                Tìm hiểu thêm
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio / Case Studies Section -->
+      <section class="py-12 md:py-20 bg-gray-50" id="portfolio">
+        <div class="container">
+          <!-- Section Header -->
+          <div class="text-center mb-12 md:mb-16">
+            <h2
+              class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+            >
+              Dự Án <span class="text-primary">Tiêu Biểu</span>
+            </h2>
+            <p class="text-md text-gray-600 max-w-2xl mx-auto">
+              Khám phá những dự án thành công mà chúng tôi đã thực hiện cho
+              khách hàng. Từ website đến ứng dụng mobile, mỗi dự án đều được
+              chăm chút tỉ mỉ.
+            </p>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Project Card 1 -->
+            <div
+              class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <div class="absolute"></div>
+                <img
+                  src="https://scontent.fvca1-3.fna.fbcdn.net/v/t39.30808-6/578897425_1549556326224762_2460892462771765817_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=o7nwBKeV7_YQ7kNvwE1rwEj&_nc_oc=Adn3J-w3cbApYjvwSFiAoX5cSKVd0j9sF-vtkqRcICDscCKryUEAGt43UJpKxZpmxSRcH_wl5dVUs-4x1WmM3Lky&_nc_zt=23&_nc_ht=scontent.fvca1-3.fna&_nc_gid=7VHSLN4lFpikmx6Mz20vmw&oh=00_Afi8k4tk2U_qD7mrrbPfmQt0KRSHEUZ3iGiGSbP0DtM63Q&oe=6918E549"
+                  alt="E-commerce Platform"
+                  class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                  onerror="this.style.display='none'"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300"
+                >
+                  <p class="text-sm">
+                    Sàn thương mại điện tử với giỏ hàng thông minh và AI chatbot
+                  </p>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors"
+                >
+                  Sàn TMĐT Đa Kênh
+                </h3>
+                <p class="text-gray-600 line-clamp-2 mb-4">
+                  Nền tảng thương mại điện tử tích hợp nhiều kênh bán hàng và
+                  công cụ quản lý thông minh.
+                </p>
+                <div class="flex items-center justify-between text-sm mt-4">
+                  <span class="text-gray-500 flex items-center gap-1">
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                    Responsive Web
+                  </span>
+                  <a
+                    href="#"
+                    class="text-primary font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all"
+                  >
+                    Xem chi tiết
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div
+              class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <div class="absolute"></div>
+                <img
+                  src="https://scontent.fvca1-3.fna.fbcdn.net/v/t39.30808-6/578897425_1549556326224762_2460892462771765817_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=o7nwBKeV7_YQ7kNvwE1rwEj&_nc_oc=Adn3J-w3cbApYjvwSFiAoX5cSKVd0j9sF-vtkqRcICDscCKryUEAGt43UJpKxZpmxSRcH_wl5dVUs-4x1WmM3Lky&_nc_zt=23&_nc_ht=scontent.fvca1-3.fna&_nc_gid=7VHSLN4lFpikmx6Mz20vmw&oh=00_Afi8k4tk2U_qD7mrrbPfmQt0KRSHEUZ3iGiGSbP0DtM63Q&oe=6918E549"
+                  alt="E-commerce Platform"
+                  class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                  onerror="this.style.display='none'"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300"
+                >
+                  <p class="text-sm">
+                    Sàn thương mại điện tử với giỏ hàng thông minh và AI chatbot
+                  </p>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors"
+                >
+                  Sàn TMĐT Đa Kênh
+                </h3>
+                <p class="text-gray-600 line-clamp-2 mb-4">
+                  Nền tảng thương mại điện tử tích hợp nhiều kênh bán hàng và
+                  công cụ quản lý thông minh.
+                </p>
+                <div class="flex items-center justify-between text-sm mt-4">
+                  <span class="text-gray-500 flex items-center gap-1">
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                    Responsive Web
+                  </span>
+                  <a
+                    href="#"
+                    class="text-primary font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all"
+                  >
+                    Xem chi tiết
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div
+              class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <div class="absolute"></div>
+                <img
+                  src="https://scontent.fvca1-3.fna.fbcdn.net/v/t39.30808-6/578897425_1549556326224762_2460892462771765817_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=o7nwBKeV7_YQ7kNvwE1rwEj&_nc_oc=Adn3J-w3cbApYjvwSFiAoX5cSKVd0j9sF-vtkqRcICDscCKryUEAGt43UJpKxZpmxSRcH_wl5dVUs-4x1WmM3Lky&_nc_zt=23&_nc_ht=scontent.fvca1-3.fna&_nc_gid=7VHSLN4lFpikmx6Mz20vmw&oh=00_Afi8k4tk2U_qD7mrrbPfmQt0KRSHEUZ3iGiGSbP0DtM63Q&oe=6918E549"
+                  alt="E-commerce Platform"
+                  class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                  onerror="this.style.display='none'"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300"
+                >
+                  <p class="text-sm">
+                    Sàn thương mại điện tử với giỏ hàng thông minh và AI chatbot
+                  </p>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors"
+                >
+                  Sàn TMĐT Đa Kênh
+                </h3>
+                <p class="text-gray-600 line-clamp-2 mb-4">
+                  Nền tảng thương mại điện tử tích hợp nhiều kênh bán hàng và
+                  công cụ quản lý thông minh.
+                </p>
+                <div class="flex items-center justify-between text-sm mt-4">
+                  <span class="text-gray-500 flex items-center gap-1">
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                    Responsive Web
+                  </span>
+                  <a
+                    href="#"
+                    class="text-primary font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all"
+                  >
+                    Xem chi tiết
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Project Card 4 -->
+            <div
+              class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <div class="absolute"></div>
+                <img
+                  src="https://scontent.fvca1-3.fna.fbcdn.net/v/t39.30808-6/578897425_1549556326224762_2460892462771765817_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=o7nwBKeV7_YQ7kNvwE1rwEj&_nc_oc=Adn3J-w3cbApYjvwSFiAoX5cSKVd0j9sF-vtkqRcICDscCKryUEAGt43UJpKxZpmxSRcH_wl5dVUs-4x1WmM3Lky&_nc_zt=23&_nc_ht=scontent.fvca1-3.fna&_nc_gid=7VHSLN4lFpikmx6Mz20vmw&oh=00_Afi8k4tk2U_qD7mrrbPfmQt0KRSHEUZ3iGiGSbP0DtM63Q&oe=6918E549"
+                  alt="E-commerce Platform"
+                  class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                  onerror="this.style.display='none'"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300"
+                >
+                  <p class="text-sm">
+                    Sàn thương mại điện tử với giỏ hàng thông minh và AI chatbot
+                  </p>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors"
+                >
+                  Sàn TMĐT Đa Kênh
+                </h3>
+                <p class="text-gray-600 line-clamp-2 mb-4">
+                  Nền tảng thương mại điện tử tích hợp nhiều kênh bán hàng và
+                  công cụ quản lý thông minh.
+                </p>
+                <div class="flex items-center justify-between text-sm mt-4">
+                  <span class="text-gray-500 flex items-center gap-1">
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                    Responsive Web
+                  </span>
+                  <a
+                    href="#"
+                    class="text-primary font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all"
+                  >
+                    Xem chi tiết
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 5 -->
+            <div
+              class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <div class="absolute"></div>
+                <img
+                  src="https://scontent.fvca1-3.fna.fbcdn.net/v/t39.30808-6/578897425_1549556326224762_2460892462771765817_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=o7nwBKeV7_YQ7kNvwE1rwEj&_nc_oc=Adn3J-w3cbApYjvwSFiAoX5cSKVd0j9sF-vtkqRcICDscCKryUEAGt43UJpKxZpmxSRcH_wl5dVUs-4x1WmM3Lky&_nc_zt=23&_nc_ht=scontent.fvca1-3.fna&_nc_gid=7VHSLN4lFpikmx6Mz20vmw&oh=00_Afi8k4tk2U_qD7mrrbPfmQt0KRSHEUZ3iGiGSbP0DtM63Q&oe=6918E549"
+                  alt="E-commerce Platform"
+                  class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                  onerror="this.style.display='none'"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300"
+                >
+                  <p class="text-sm">
+                    Sàn thương mại điện tử với giỏ hàng thông minh và AI chatbot
+                  </p>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors"
+                >
+                  Sàn TMĐT Đa Kênh
+                </h3>
+                <p class="text-gray-600 line-clamp-2 mb-4">
+                  Nền tảng thương mại điện tử tích hợp nhiều kênh bán hàng và
+                  công cụ quản lý thông minh.
+                </p>
+                <div class="flex items-center justify-between text-sm mt-4">
+                  <span class="text-gray-500 flex items-center gap-1">
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                    Responsive Web
+                  </span>
+                  <a
+                    href="#"
+                    class="text-primary font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all"
+                  >
+                    Xem chi tiết
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 6 -->
+            <div
+              class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+            >
+              <div class="relative h-64 overflow-hidden">
+                <div class="absolute"></div>
+                <img
+                  src="https://scontent.fvca1-3.fna.fbcdn.net/v/t39.30808-6/578897425_1549556326224762_2460892462771765817_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=o7nwBKeV7_YQ7kNvwE1rwEj&_nc_oc=Adn3J-w3cbApYjvwSFiAoX5cSKVd0j9sF-vtkqRcICDscCKryUEAGt43UJpKxZpmxSRcH_wl5dVUs-4x1WmM3Lky&_nc_zt=23&_nc_ht=scontent.fvca1-3.fna&_nc_gid=7VHSLN4lFpikmx6Mz20vmw&oh=00_Afi8k4tk2U_qD7mrrbPfmQt0KRSHEUZ3iGiGSbP0DtM63Q&oe=6918E549"
+                  alt="E-commerce Platform"
+                  class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                  onerror="this.style.display='none'"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div
+                  class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300"
+                >
+                  <p class="text-sm">
+                    Sàn thương mại điện tử với giỏ hàng thông minh và AI chatbot
+                  </p>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors"
+                >
+                  Sàn TMĐT Đa Kênh
+                </h3>
+                <p class="text-gray-600 line-clamp-2 mb-4">
+                  Nền tảng thương mại điện tử tích hợp nhiều kênh bán hàng và
+                  công cụ quản lý thông minh.
+                </p>
+                <div class="flex items-center justify-between text-sm mt-4">
+                  <span class="text-gray-500 flex items-center gap-1">
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                    Responsive Web
+                  </span>
+                  <a
+                    href="#"
+                    class="text-primary font-semibold hover:gap-2 inline-flex items-center gap-1 transition-all"
+                  >
+                    Xem chi tiết
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="text-center mt-12">
+            <a
+              href="#contact"
+              class="inline-flex items-center gap-2 px-6 py-3 text-white font-semibold rounded-lg hover:shadow-xl transform hover:scale-105 transition-all text-md"
+              style="background: var(--gradient)"
+            >
+              Xem Tất Cả Dự Án
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Workflow / Process Section -->
+      <section class="py-16 md:py-24 bg-white" id="workflow">
+        <div class="container">
+          <!-- Section Header -->
+          <div class="text-center mb-8 sm:mb-12 md:mb-16 px-4 sm:px-6">
+            <h2
+              class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6"
+            >
+              Quy Trình <span class="text-primary">Làm Việc</span>
+            </h2>
+            <p
+              class="text-sm sm:text-base md:text-md text-gray-600 max-w-2xl mx-auto px-2"
+            >
+              Chúng tôi tuân theo quy trình chuyên nghiệp 6 bước để đảm bảo dự
+              án của bạn được thực hiện đúng tiến độ, đúng chất lượng và vượt
+              mong đợi.
+            </p>
+          </div>
+
+          <!-- Timeline Container -->
+          <div class="container">
+            <div class="relative">
+              <!-- Vertical Line -->
+              <div
+                class="absolute left-7 sm:left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-orange-400 to-primary"
+              ></div>
+
+              <!-- Timeline Items -->
+              <div class="space-y-8 sm:space-y-10 md:space-y-12">
+                <!-- Item 1 - Left (Mobile: All Left) -->
+                <div class="relative flex items-center md:justify-start">
+                  <!-- Icon Circle -->
+                  <div
+                    class="absolute left-0 md:left-1/2 md:-translate-x-1/2 size-14 sm:size-16 bg-gradient-to-br from-primary to-orange-500 rounded-full shadow-xl flex items-center justify-center z-10"
+                  >
+                    <svg
+                      class="size-6 sm:size-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </div>
+
+                  <!-- Content Card - Right side on desktop -->
+                  <div
+                    class="ml-16 md:ml-0 md:w-5/12 md:ml-auto md:pl-8 lg:pl-12"
+                  >
+                    <div
+                      class="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+                    >
+                      <h3
+                        class="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3"
+                      >
+                        Khảo Sát & Phân Tích Yêu Cầu
+                      </h3>
+                      <p
+                        class="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed"
+                      >
+                        Thu thập và phân tích chi tiết yêu cầu của khách hàng.
+                        Nghiên cứu thị trường, đối thủ cạnh tranh và xác định
+                        mục tiêu dự án. Tư vấn giải pháp công nghệ phù hợp nhất.
+                      </p>
+                      <div class="flex items-center justify-between gap-2">
+                        <span
+                          class="text-primary font-semibold text-xs sm:text-sm"
+                          >3-5 ngày</span
+                        >
+                        <span class="text-xs text-gray-500">Bước 1/6</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 2 - Right -->
+                <div class="relative flex items-center md:justify-end">
+                  <div
+                    class="absolute left-0 md:left-1/2 md:-translate-x-1/2 size-14 sm:size-16 bg-gradient-to-br from-primary to-orange-500 rounded-full shadow-xl flex items-center justify-center z-10"
+                  >
+                    <svg
+                      class="size-6 sm:size-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                      />
+                    </svg>
+                  </div>
+
+                  <div
+                    class="ml-16 md:ml-0 md:w-5/12 md:mr-auto md:pr-8 lg:pr-12"
+                  >
+                    <div
+                      class="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+                    >
+                      <h3
+                        class="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3"
+                      >
+                        Thiết Kế Giao Diện & Trải Nghiệm Người Dùng
+                      </h3>
+                      <p
+                        class="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed"
+                      >
+                        Thiết kế UI/UX chuyên nghiệp, tập trung vào trải nghiệm
+                        người dùng. Tạo wireframe, mockup và prototype tương
+                        tác. Điều chỉnh theo feedback của khách hàng.
+                      </p>
+                      <div class="flex items-center justify-between gap-2">
+                        <span
+                          class="text-primary font-semibold text-xs sm:text-sm"
+                          >5-7 ngày</span
+                        >
+                        <span class="text-xs text-gray-500">Bước 2/6</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 3 - Left -->
+                <div class="relative flex items-center md:justify-start">
+                  <div
+                    class="absolute left-0 md:left-1/2 md:-translate-x-1/2 size-14 sm:size-16 bg-gradient-to-br from-primary to-orange-500 rounded-full shadow-xl flex items-center justify-center z-10"
+                  >
+                    <svg
+                      class="size-6 sm:size-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                      />
+                    </svg>
+                  </div>
+
+                  <div
+                    class="ml-16 md:ml-0 md:w-5/12 md:ml-auto md:pl-8 lg:pl-12"
+                  >
+                    <div
+                      class="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+                    >
+                      <h3
+                        class="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3"
+                      >
+                        Phát Triển
+                      </h3>
+                      <p
+                        class="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed"
+                      >
+                        Lập trình frontend, backend theo chuẩn coding best
+                        practices. Tích hợp API, database và các tính năng theo
+                        yêu cầu. Code sạch, tối ưu hiệu suất và bảo mật.
+                      </p>
+                      <div class="flex items-center justify-between gap-2">
+                        <span
+                          class="text-primary font-semibold text-xs sm:text-sm"
+                          >2-4 tuần</span
+                        >
+                        <span class="text-xs text-gray-500">Bước 3/6</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 4 - Right -->
+                <div class="relative flex items-center md:justify-end">
+                  <div
+                    class="absolute left-0 md:left-1/2 md:-translate-x-1/2 size-14 sm:size-16 bg-gradient-to-br from-primary to-orange-500 rounded-full shadow-xl flex items-center justify-center z-10"
+                  >
+                    <svg
+                      class="size-6 sm:size-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+
+                  <div
+                    class="ml-16 md:ml-0 md:w-5/12 md:mr-auto md:pr-8 lg:pr-12"
+                  >
+                    <div
+                      class="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+                    >
+                      <h3
+                        class="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3"
+                      >
+                        Kiểm Thử & Đảm Bảo Chất Lượng
+                      </h3>
+                      <p
+                        class="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed"
+                      >
+                        Test tổng thể chức năng, hiệu năng, bảo mật và khả năng
+                        tương thích đa nền tảng. Sửa lỗi và tối ưu để đảm bảo
+                        sản phẩm hoàn hảo trước khi bàn giao.
+                      </p>
+                      <div class="flex items-center justify-between gap-2">
+                        <span
+                          class="text-primary font-semibold text-xs sm:text-sm"
+                          >3-5 ngày</span
+                        >
+                        <span class="text-xs text-gray-500">Bước 4/6</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 5 - Left -->
+                <div class="relative flex items-center md:justify-start">
+                  <div
+                    class="absolute left-0 md:left-1/2 md:-translate-x-1/2 size-14 sm:size-16 bg-gradient-to-br from-primary to-orange-500 rounded-full shadow-xl flex items-center justify-center z-10"
+                  >
+                    <svg
+                      class="size-6 sm:size-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+                      />
+                    </svg>
+                  </div>
+
+                  <div
+                    class="ml-16 md:ml-0 md:w-5/12 md:ml-auto md:pl-8 lg:pl-12"
+                  >
+                    <div
+                      class="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+                    >
+                      <h3
+                        class="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3"
+                      >
+                        Triển Khai & Bàn Giao
+                      </h3>
+                      <p
+                        class="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed"
+                      >
+                        Deploy sản phẩm lên server production, cấu hình domain,
+                        SSL và các dịch vụ liên quan. Hướng dẫn sử dụng chi
+                        tiết, bàn giao source code và tài liệu kỹ thuật đầy đủ.
+                      </p>
+                      <div class="flex items-center justify-between gap-2">
+                        <span
+                          class="text-primary font-semibold text-xs sm:text-sm"
+                          >1-2 ngày</span
+                        >
+                        <span class="text-xs text-gray-500">Bước 5/6</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 6 - Right -->
+                <div class="relative flex items-center md:justify-end">
+                  <div
+                    class="absolute left-0 md:left-1/2 md:-translate-x-1/2 size-14 sm:size-16 bg-gradient-to-br from-primary to-orange-500 rounded-full shadow-xl flex items-center justify-center z-10"
+                  >
+                    <svg
+                      class="size-6 sm:size-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </div>
+
+                  <div
+                    class="ml-16 md:ml-0 md:w-5/12 md:mr-auto md:pr-8 lg:pr-12"
+                  >
+                    <div
+                      class="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
+                    >
+                      <h3
+                        class="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3"
+                      >
+                        Bảo Trì & Phát Triển Nâng Cấp
+                      </h3>
+                      <p
+                        class="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed"
+                      >
+                        Hỗ trợ kỹ thuật 24/7, sửa lỗi phát sinh và cập nhật tính
+                        năng mới theo yêu cầu. Tối ưu hiệu suất và đảm bảo hệ
+                        thống luôn hoạt động ổn định, bảo mật.
+                      </p>
+                      <div class="flex items-center justify-between gap-2">
+                        <span
+                          class="text-primary font-semibold text-xs sm:text-sm"
+                          >Liên tục</span
+                        >
+                        <span class="text-xs text-gray-500">Bước 6/6</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partners/Clients Section -->
+      <section class="py-16 md:py-24 bg-gray-50" id="partners">
+        <div class="container">
+          <!-- Section Header -->
+          <div class="text-center mb-12">
+            <h2
+              class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6"
+            >
+              Đối Tác
+              <span class="text-primary">Tin Cậy</span>
+            </h2>
+            <p
+              class="text-base md:text-md text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            >
+              Được tin tưởng bởi hơn
+              <span class="font-bold text-primary">350+ doanh nghiệp</span> từ
+              startup đến tập đoàn lớn, chúng tôi tự hào đồng hành cùng những
+              thương hiệu hàng đầu
+            </p>
+          </div>
+
+          <!-- Swiper Slider -->
+          <div class="relative px-3 sm:px-4">
+            <div class="swiper partnersSwiper overflow-hidden">
+              <div class="swiper-wrapper items-center py-4">
+                <!-- Partner Logo 1 -->
+                <div class="swiper-slide">
+                  <div
+                    class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-500 border border-gray-200 hover:border-primary/30 flex items-center justify-center h-32 hover:-translate-y-2"
+                  >
+                    <img
+                      src="https://mitsubishivietnam.net/wp-content/uploads/2020/10/logo.png"
+                      alt="Partner 1"
+                      class="max-w-full max-h-full object-contain transition-all duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                </div>
+
+                <!-- Partner Logo 2 -->
+                <div class="swiper-slide">
+                  <div
+                    class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 flex items-center justify-center h-32"
+                  >
+                    <img
+                      src="data:image/png;base64,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"
+                      alt="Partner 2"
+                      class="max-w-full max-h-full object-contain transition-all duration-300"
+                    />
+                  </div>
+                </div>
+
+                <!-- Partner Logo 3 -->
+                <div class="swiper-slide">
+                  <div
+                    class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 flex items-center justify-center h-32"
+                  >
+                    <img
+                      src="https://truyenthong365.vn/wp-content/uploads/2025/04/logoyellow.png"
+                      alt="Partner 3"
+                      class="max-w-full max-h-full object-contain transition-all duration-300"
+                    />
+                  </div>
+                </div>
+
+                <!-- Partner Logo 4 -->
+                <div class="swiper-slide">
+                  <div
+                    class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 flex items-center justify-center h-32"
+                  >
+                    <img
+                      src="https://caodang.fpt.edu.vn/wp-content/uploads/logo-3.png"
+                      alt="Partner 4"
+                      class="max-w-full max-h-full object-contain transition-all duration-300"
+                    />
+                  </div>
+                </div>
+
+                <!-- Partner Logo 5 -->
+                <div class="swiper-slide">
+                  <div
+                    class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 flex items-center justify-center h-32"
+                  >
+                    <img
+                      src="https://localhome.vn/gwzv/themes/localhome/images/localhome-logo-1202.png"
+                      alt="Partner 5"
+                      class="max-w-full max-h-full object-contain transition-all duration-300"
+                    />
+                  </div>
+                </div>
+
+                <!-- Partner Logo 6 -->
+                <div class="swiper-slide">
+                  <div
+                    class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 flex items-center justify-center h-32"
+                  >
+                    <img
+                      src="https://hiephoixe.vn/public/upload/logo/logoh2x3d2.png"
+                      alt="Partner 6"
+                      class="max-w-full max-h-full object-contain transition-all duration-300"
+                    />
+                  </div>
+                </div>
+
+                <!-- Partner Logo 7 -->
+                <div class="swiper-slide">
+                  <div
+                    class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 flex items-center justify-center h-32"
+                  >
+                    <img
+                      src="https://botuclaixe247.com/wp-content/uploads/2025/11/Logo-Golden-Bee.png"
+                      alt="Partner 7"
+                      class="max-w-full max-h-full object-contain transition-all duration-300"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div
+              class="swiper-button-prev !w-12 !h-12 after:!text-primary after:!text-xl !font-semibold"
+            ></div>
+            <div
+              class="swiper-button-next !w-12 !h-12 after:!text-primary after:!text-xl !font-semibold"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section - Golden Bee -->
+      <section
+        class="py-16 md:py-24 bg-gradient-to-b from-white via-slate-50 to-white relative overflow-hidden"
+        id="contact"
+      >
+        <div
+          class="container grid lg:grid-cols-2 gap-12 lg:gap-20 items-center"
+        >
+          <!-- LEFT: Features -->
+          <div class="sm:space-y-8">
+            <div>
+              <h2
+                class="text-3xl md:text-4xl text-gray-900 font-semibold sm:mb-6"
+              >
+                Liên Hệ Với Chúng Tôi
+              </h2>
+              <p class="text-lg text-gray-600 leading-relaxed">
+                Hãy liên hệ với chúng tôi để thảo luận về nhu cầu của bạn. Đội
+                ngũ chuyên gia Golden Bee sẵn sàng biến ý tưởng thành hiện thực.
+              </p>
+            </div>
+
+            <!-- Feature list -->
+            <div class="space-y-6 mt-12 sm:block hidden">
+              <div class="flex items-start gap-4 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-xl bg-primary/10 group-hover:bg-primary transition-colors"
+                  >
+                    <svg
+                      class="h-6 w-6 text-primary group-hover:text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900">
+                    Phát Triển Nhanh Chóng
+                  </h3>
+                  <p class="text-gray-600 text-sm mt-1">
+                    Chúng tôi sử dụng công nghệ tân tiến để đưa sản phẩm của bạn
+                    ra thị trường nhanh nhất.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-xl bg-primary/10 group-hover:bg-primary transition-colors"
+                  >
+                    <svg
+                      class="h-6 w-6 text-primary group-hover:text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900">
+                    Chất Lượng Tuyệt Vời
+                  </h3>
+                  <p class="text-gray-600 text-sm mt-1">
+                    Mọi dự án đều trải qua quy trình kiểm chất lượng nghiêm ngặt
+                    để đảm bảo hoàn hảo.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-xl bg-primary/10 group-hover:bg-primary transition-colors"
+                  >
+                    <svg
+                      class="h-6 w-6 text-primary group-hover:text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900">
+                    Giá Trị Tối Ưu
+                  </h3>
+                  <p class="text-gray-600 text-sm mt-1">
+                    Chúng tôi cung cấp những giải pháp cost-effective mà không
+                    làm giảm chất lượng.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-xl bg-primary/10 group-hover:bg-primary transition-colors"
+                  >
+                    <svg
+                      class="h-6 w-6 text-primary group-hover:text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900">
+                    Hỗ Trợ Lâu Dài
+                  </h3>
+                  <p class="text-gray-600 text-sm mt-1">
+                    Chúng tôi tiếp tục hỗ trợ và cải thiện sản phẩm của bạn sau
+                    khi triển khai.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Contact Form -->
+          <div
+            class="bg-white rounded-3xl shadow-lg ring-1 ring-gray-100 p-8 md:p-10 space-y-6 sticky top-0 sm:top-8"
+          >
+            <!-- Email -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2"
+                >Email</label
+              >
+              <input
+                type="email"
+                placeholder="your@email.com"
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-700 bg-white focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+              />
+            </div>
+
+            <!-- Phone -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2"
+                >Số Điện Thoại</label
+              >
+              <input
+                type="tel"
+                placeholder="Số điện thoại"
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-700 bg-white focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+              />
+            </div>
+
+            <!-- Project Type -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2"
+                >Loại Dự Án</label
+              >
+              <select
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 bg-white text-gray-700 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+              >
+                <option value="">Chọn loại dự án</option>
+                <option value="website">Website</option>
+                <option value="mobile">Ứng Dụng Mobile</option>
+                <option value="web-app">Web App</option>
+                <option value="ecommerce">E-Commerce</option>
+                <option value="other">Khác</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2"
+                >Mô Tả Dự Án (Tùy Chọn)</label
+              >
+              <textarea
+                placeholder="Hãy cho chúng tôi biết thêm về dự án của bạn..."
+                rows="4"
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-700 bg-white focus:ring-2 focus:ring-primary focus:border-primary outline-none transition resize-none"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button
+              class="w-full bg-gradient-to-r from-primary to-orange-500 hover:from-primary/90 hover:to-orange-600 text-gray-900 font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 text-white"
+            >
+              Gửi Yêu Cầu
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#1a1f3a] text-gray-300 pt-16 pb-8">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <!-- Company Info -->
+          <div class="space-y-4">
+            <h3 class="text-white font-semibold text-lg">
+              CÔNG TY TNHH GOLDEN BEE
+            </h3>
+            <p class="text-sm leading-relaxed">
+              Chuyên cung cấp giải pháp công nghệ toàn diện: Thiết kế website,
+              phát triển phần mềm, ứng dụng mobile và dịch vụ SEO chuyên nghiệp.
+            </p>
+            <!-- Social Media Links -->
+            <div class="flex gap-4 pt-2">
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition-all"
+                aria-label="Facebook"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition-all"
+                aria-label="LinkedIn"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition-all"
+                aria-label="YouTube"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 hover:bg-primary rounded-full flex items-center justify-center transition-all"
+                aria-label="Zalo"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 15.318c-.271.431-.931.891-1.762.891-.311 0-.611-.062-.891-.181-1.381-.591-2.793-1.111-4.231-1.621-.601-.211-1.111-.651-1.381-1.201-.271-.551-.301-1.171-.091-1.742.331-.871 1.201-1.471 2.132-1.471.331 0 .651.091.931.241 1.051.541 2.042 1.141 2.973 1.802.601.421.991 1.081 1.081 1.802.06.421-.03.841-.241 1.201-.211.361-.541.631-.921.781z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h4 class="text-white font-semibold text-lg mb-4">Dịch Vụ</h4>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="text-sm hover:text-primary transition-colors"
+                  >Thiết kế Website</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-primary transition-colors"
+                  >Phát triển Ứng dụng Mobile</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-primary transition-colors"
+                  >Phần mềm Quản lý</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-primary transition-colors"
+                  >Dịch vụ SEO</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-primary transition-colors"
+                  >Tư vấn Công nghệ</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-primary transition-colors"
+                  >Bảo trì & Hỗ trợ</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-white font-semibold text-lg mb-4">Liên Kết</h4>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="text-sm hover:text-primary transition-colors"
+                  >Giới thiệu</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-primary transition-colors"
+                  >Dự án tiêu biểu</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-primary transition-colors"
+                  >Bảng giá</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-primary transition-colors"
+                  >Blog & Tin tức</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-primary transition-colors"
+                  >Tuyển dụng</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-primary transition-colors"
+                  >Liên hệ</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-white font-semibold text-lg mb-4">Liên Hệ</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <svg
+                  class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <span class="text-sm"
+                  >123 Đường ABC, Phường XYZ, Quận 1, TP.HCM</span
+                >
+              </li>
+              <li class="flex items-center gap-3">
+                <svg
+                  class="w-5 h-5 text-primary flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
+                <a
+                  href="tel:0973747609"
+                  class="text-sm hover:text-primary transition-colors"
+                  >0973 747 609</a
+                >
+              </li>
+              <li class="flex items-center gap-3">
+                <svg
+                  class="w-5 h-5 text-primary flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                <a
+                  href="mailto:contact@goldenbee.vn"
+                  class="text-sm hover:text-primary transition-colors"
+                  >contact@goldenbee.vn</a
+                >
+              </li>
+              <li class="flex items-center gap-3">
+                <svg
+                  class="w-5 h-5 text-primary flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="text-sm">Thứ 2 - Thứ 6: 8:00 - 18:00</span>
+              </li>
+            </ul>
+
+            <!-- CTA Button in Footer -->
+            <button
+              class="mt-6 w-full px-6 py-3 text-white font-semibold rounded-lg hover:shadow-lg transform hover:scale-105 transition-all"
+              style="background: var(--gradient)"
+            >
+              Nhận Tư Vấn Miễn Phí
+            </button>
+          </div>
+        </div>
+
+        <!-- Bottom Footer Bar -->
+        <div
+          class="border-t border-gray-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-sm text-gray-400 text-center md:text-left">
+            © 2025 Golden Bee. All rights reserved. |
+            <a href="#" class="hover:text-primary transition-colors"
+              >Chính sách bảo mật</a
+            >
+            |
+            <a href="#" class="hover:text-primary transition-colors"
+              >Điều khoản sử dụng</a
+            >
+          </p>
+          <div class="flex items-center gap-2">
+            <span class="text-sm text-gray-400">Designed by</span>
+            <span class="text-primary font-semibold">Golden Bee Team</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileServicesBtn = document.getElementById("mobile-services-btn");
+      const mobileServicesDropdown = document.getElementById(
+        "mobile-services-dropdown"
+      );
+      const mobileBlogBtn = document.getElementById("mobile-blog-btn");
+      const mobileBlogDropdown = document.getElementById(
+        "mobile-blog-dropdown"
+      );
+
+      // Toggle main mobile menu
+      mobileMenuBtn.addEventListener("click", () => {
+        const isExpanded =
+          mobileMenuBtn.getAttribute("aria-expanded") === "true";
+        mobileMenuBtn.setAttribute("aria-expanded", !isExpanded);
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Toggle mobile services dropdown
+      mobileServicesBtn.addEventListener("click", () => {
+        mobileServicesDropdown.classList.toggle("hidden");
+        const svg = mobileServicesBtn.querySelector("svg");
+        svg.classList.toggle("rotate-180");
+      });
+
+      // Toggle mobile blog dropdown
+      mobileBlogBtn.addEventListener("click", () => {
+        mobileBlogDropdown.classList.toggle("hidden");
+        const svg = mobileBlogBtn.querySelector("svg");
+        svg.classList.toggle("rotate-180");
+      });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll("#mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenuBtn.setAttribute("aria-expanded", false);
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+      const partnersSwiper = new Swiper(".partnersSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1280: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
