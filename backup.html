@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 w-full h-full pointer-events-none">
+        <div
+          class="absolute top-0 right-0 w-[600px] h-[600px] bg-orange-100/50 rounded-full blur-3xl -translate-y-1/4 translate-x-1/4 mix-blend-multiply"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-yellow-100/50 rounded-full blur-3xl translate-y-1/4 -translate-x-1/4 mix-blend-multiply"
+        ></div>
+        <svg
+          class="absolute inset-0 w-full h-full opacity-[0.04]"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <pattern
+              id="hex-grid"
+              width="40"
+              height="40"
+              patternUnits="userSpaceOnUse"
+              patternTransform="scale(0.8)"
+            >
+              <path
+                d="M20 0L37.32 10V30L20 40L2.68 30V10L20 0Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+              />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#hex-grid)" />
+        </svg>
+      </div>
+
+      <div class="container relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="text-center lg:text-left">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-orange-200 shadow-sm mb-6 mt-2"
+            >
+              <span class="relative flex h-2 w-2">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-2 w-2 bg-orange-500"
+                ></span>
+              </span>
+              <span
+                class="text-xs font-bold text-slate-600 uppercase tracking-wide"
+                >Tech Blog & Solutions</span
+              >
+            </div>
+
+            <h1
+              class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-6"
+            >
+              Kiến Thức Là <br class="hidden sm:block" />
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600 relative"
+              >
+                Sức Mạnh Số
+                <svg
+                  class="absolute w-full h-3 -bottom-1 left-0 text-orange-300 -z-10 opacity-60"
+                  viewBox="0 0 100 10"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M0 5 Q 50 10 100 5"
+                    stroke="currentColor"
+                    stroke-width="8"
+                    fill="none"
+                  />
+                </svg>
+              </span>
+            </h1>
+
+            <p
+              class="text-lg text-slate-600 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0"
+            >
+              Chuyên trang về
+              <strong class="text-slate-900"
+                >Phát triển phần mềm, AI & Bảo mật</strong
+              >. Cập nhật xu hướng công nghệ mới nhất mỗi ngày.
+            </p>
+
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-2"
+            >
+              <button
+                class="px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#fbcb1c] to-[#ff8a3d] text-white font-bold shadow-lg shadow-slate-900/20 hover:-translate-y-1 transition-all duration-300"
+              >
+                Đọc Blog Ngay
+              </button>
+              <button
+                class="px-8 py-4 rounded-xl font-bold text-gray-700 bg-white border-2 border-[#fbcb1c] hover:border-[#fbcb1c] hover:text-[#fbcb1c] hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              >
+                Đăng Ký Nhận Tin
+              </button>
+            </div>
+          </div>
+
+          <div class="hidden lg:flex relative justify-center perspective-1000">
+            <div
+              class="absolute inset-0 bg-gradient-to-tr from-amber-100 to-transparent rounded-full blur-2xl scale-90"
+            ></div>
+            <div class="relative z-10 w-[500px]">
+              <img
+                src="./assets/images/girl.png"
+                alt="Golden Bee Tech"
+                class="w-full h-auto object-contain drop-shadow-2xl animate-float-medium"
+                style="animation-duration: 6s"
+              />
+              <div
+                class="glass-card absolute top-10 -left-15 p-4 rounded-2xl animate-float-slow"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 text-blue-600 shadow-inner ring-1 ring-blue-100"
+                  >
+                    <svg
+                      class="w-6 h-6 animate-[spin_10s_linear_infinite]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p
+                      class="text-xs text-slate-500 font-bold uppercase tracking-wider mb-0.5"
+                    >
+                      DevOps
+                    </p>
+                    <p class="text-base font-extrabold text-slate-800">
+                      Clean Code
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="glass-card absolute bottom-10 -right-0 p-4 rounded-2xl animate-float-medium"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-emerald-50 to-green-50 text-emerald-600 shadow-inner ring-1 ring-green-100"
+                  >
+                    <svg
+                      class="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="pr-2">
+                    <p
+                      class="text-xs text-slate-500 font-bold uppercase tracking-wider mb-0.5"
+                    >
+                      Security
+                    </p>
+                    <p class="text-base font-extrabold text-slate-800">
+                      Verified
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
