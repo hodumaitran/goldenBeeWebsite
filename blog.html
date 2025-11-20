@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enhanced SEO meta tags and structured data -->
+    <meta name="description"
+        content="Golden Bee - Blog công nghệ cập nhật hằng ngày về phát triển phần mềm, DevOps, AI, bảo mật và giải pháp doanh nghiệp">
+    <meta name="keywords"
+        content="blog công nghệ, phát triển phần mềm, DevOps, React, Node.js, Docker, Kubernetes, bảo mật web, AI, machine learning">
+    <meta name="author" content="Golden Bee Software">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Vietnamese">
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Golden Bee - Blog Công Nghệ & Hướng Dẫn Lập Trình">
+    <meta property="og:description"
+        content="Khám phá kiến thức sâu sắc về công nghệ, lập trình và phát triển ứng dụng từ các chuyên gia Golden Bee">
+    <meta property="og:image" content="/placeholder.svg?height=630&width=1200">
+    <meta property="og:url" content="https://goldenbee.com/blog">
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Golden Bee - Blog Công Nghệ">
+    <meta name="twitter:description" content="Bài viết công nghệ, hướng dẫn lập trình, DevOps và giải pháp phần mềm">
+    <meta name="twitter:image" content="/placeholder.svg?height=630&width=1200">
+    <title>Golden Bee - Blog Công Nghệ & Hướng Dẫn Lập Trình | Phần Mềm Tiên Tiến</title>
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Golden Bee Blog",
+      "description": "Blog công nghệ chuyên cung cấp hướng dẫn, kiến thức về phát triển phần mềm, DevOps, AI, bảo mật và giải pháp doanh nghiệp",
+      "url": "https://goldenbee.com/blog",
+      "image": "https://goldenbee.com/logo.png",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Golden Bee Software",
+        "url": "https://goldenbee.com"
+      }
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        :root {
+            --color-primary: #fbcb1c;
+            --gradient: linear-gradient(90deg, #ffd84d 0%, #ff8a3d 100%);
+        }
+
+        @theme {
+            --color-primary: var(--color-primary);
+        }
+
+          @utility container {
+        @apply w-full mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+        }
+
+        @layer base {
+            body {
+                font-family: "Mulish", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+                line-height: 1.65;
+                background-color: #fffefc;
+            }
+        }
+
+        @keyframes float-slow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
+        }
+        @keyframes float-medium {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+        .animate-float-slow { animation: float-slow 5s ease-in-out infinite; }
+        .animate-float-medium { animation: float-medium 4s ease-in-out infinite; }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 
+                0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+                0 2px 4px -1px rgba(0, 0, 0, 0.06),
+                inset 0 0 20px rgba(255, 255, 255, 0.5); 
+        }
+    </style>
+</head>
+
+<body>
+    <main class="overflow-x-hidden">
+        <section class="relative overflow-hidden">
+            <div class="absolute inset-0 w-full h-full pointer-events-none">
+                <div
+                    class="absolute top-0 right-0 w-[600px] h-[600px] bg-orange-100/50 rounded-full blur-3xl -translate-y-1/4 translate-x-1/4 mix-blend-multiply">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-yellow-100/50 rounded-full blur-3xl translate-y-1/4 -translate-x-1/4 mix-blend-multiply">
+                </div>
+                <svg class="absolute inset-0 w-full h-full opacity-[0.04]" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="hex-grid" width="40" height="40" patternUnits="userSpaceOnUse"
+                            patternTransform="scale(0.8)">
+                            <path d="M20 0L37.32 10V30L20 40L2.68 30V10L20 0Z" fill="none" stroke="currentColor"
+                                stroke-width="1" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#hex-grid)" />
+                </svg>
+            </div>
+
+            <div class="container relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="text-center lg:text-left">
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-orange-200 shadow-sm mb-6 mt-2">
+                            <span class="relative flex h-2 w-2">
+                                <span
+                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+                            </span>
+                            <span class="text-xs font-bold text-slate-600 uppercase tracking-wide">Tech Blog &
+                                Solutions</span>
+                        </div>
+
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
+                            Kiến Thức Là <br class="hidden sm:block">
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-600 relative">
+                                Sức Mạnh Số
+                                <svg class="absolute w-full h-3 -bottom-1 left-0 text-orange-300 -z-10 opacity-60"
+                                    viewBox="0 0 100 10" preserveAspectRatio="none">
+                                    <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="8" fill="none" />
+                                </svg>
+                            </span>
+                        </h1>
+
+                        <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0">
+                            Chuyên trang về <strong class="text-slate-900">Phát triển phần mềm, AI & Bảo mật</strong>.
+                            Cập nhật xu hướng công nghệ mới nhất mỗi ngày.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-2">
+                            <button
+                                class="px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#fbcb1c] to-[#ff8a3d] text-white font-bold shadow-lg shadow-slate-900/20 hover:-translate-y-1 transition-all duration-300">
+                                Đọc Blog Ngay
+                            </button>
+                            <button
+                                class="px-8 py-4 rounded-xl font-bold text-gray-700 bg-white border-2 border-[#fbcb1c] hover:border-[#fbcb1c] hover:text-[#fbcb1c] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                                Đăng Ký Nhận Tin
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="hidden lg:flex relative justify-center perspective-1000">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-amber-100 to-transparent rounded-full blur-2xl scale-90">
+                        </div>
+                        <div class="relative z-10 w-[500px]">
+                            <img src="./assets/images/girl.png" alt="Golden Bee Tech"
+                                class="w-full h-auto object-contain drop-shadow-2xl animate-float-medium"
+                                style="animation-duration: 6s;">
+                            <div class="glass-card absolute top-10 -left-15 p-4 rounded-2xl animate-float-slow">
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 text-blue-600 shadow-inner ring-1 ring-blue-100">
+                                        <svg class="w-6 h-6 animate-[spin_10s_linear_infinite]" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mb-0.5">
+                                            DevOps
+                                        </p>
+                                        <p class="text-base font-extrabold text-slate-800">Clean Code</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="glass-card absolute bottom-10 -right-0 p-4 rounded-2xl animate-float-medium">
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-emerald-50 to-green-50 text-emerald-600 shadow-inner ring-1 ring-green-100">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="pr-2">
+                                        <p class="text-xs text-slate-500 font-bold uppercase tracking-wider mb-0.5">
+                                            Security
+                                        </p>
+                                        <p class="text-base font-extrabold text-slate-800">Verified</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-15">
+            <div class="container">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Bài Viết Nổi Bật</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <article
+                        class="transition-all duration-300 hover:shadow-xl hover:-translate-y-2 rounded-xl overflow-hidden shadow-lg bg-white">
+                        <img src="./assets/images/blog-1.jpg"
+                            alt="AI Trong Phát Triển Phần Mềm - Hình ảnh công nghệ trí tuệ nhân tạo"
+                            class="w-full h-56 object-cover">
+                        <div class="p-8">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="bg-primary text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Công
+                                    Nghệ</span>
+                                <span class="text-xs text-gray-500">15 Tháng 11, 2025</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                                <a href="#" title="Tương Lai của AI trong Phát Triển Phần Mềm">
+                                    Tương Lai của AI trong Phát Triển Phần Mềm
+                                </a>
+                            </h3>
+                            <p class="text-gray-600 mb-6 line-clamp-2">
+                                Khám phá cách trí tuệ nhân tạo đang thay đổi cách chúng ta viết mã và phát triển ứng
+                                dụng.
+                                Từ tự động hoàn thành mã đến kiểm tra lỗi thông minh.
+                            </p>
+                            <a href="#" class="text-gray-900 font-semibold hover:text-orange-500 transition-colors">
+                                Đọc Tiếp →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article
+                        class="transition-all duration-300 hover:shadow-xl hover:-translate-y-2 rounded-xl overflow-hidden shadow-lg bg-white">
+                        <img src="./assets/images/blog-2.jpg"
+                            alt="Bảo Mật Ứng Dụng Web - Hình ảnh khóa bảo mật và mã hóa dữ liệu"
+                            class="w-full h-56 object-cover">
+                        <div class="p-8">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="bg-primary text-gray-800 text-xs font-semibold px-3 py-1 rounded-full">Bảo
+                                    Mật</span>
+                                <span class="text-xs text-gray-500">12 Tháng 11, 2025</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                                <a href="#" title="Best Practices cho Bảo Mật Ứng Dụng Web">
+                                    Best Practices cho Bảo Mật Ứng Dụng Web
+                                </a>
+                            </h3>
+                            <p class="text-gray-600 mb-6 line-clamp-2">
+                                Tìm hiểu các phương pháp tốt nhất để bảo vệ ứng dụng web của bạn khỏi các mối đe dọa phổ
+                                biến. Bao gồm xác thực, mã hóa và kiểm tra bảo mật.
+                            </p>
+                            <a href="#" class="text-gray-900 font-semibold hover:text-orange-500 transition-colors">
+                                Đọc Tiếp →
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Tất Cả Bài Viết</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <article
+                        class="transition-all duration-300 hover:shadow-xl hover:-translate-y-2 rounded-xl overflow-hidden shadow bg-white">
+                        <img src="./assets/images/blog-3.webp"
+                            alt="Docker và Kubernetes - Hình ảnh container và orchestration"
+                            class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span
+                                    class="bg-primary text-gray-800 text-xs font-semibold px-2 py-1 rounded">DevOps</span>
+                                <span class="text-xs text-gray-500">15 Tháng 11, 2025</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-3">
+                                <a href="#" title="Docker & Kubernetes: Hướng Dẫn Toàn Diện">
+                                    Docker & Kubernetes: Hướng Dẫn Toàn Diện
+                                </a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+                                Tìm hiểu cách sử dụng Docker và Kubernetes để triển khai ứng dụng một cách hiệu quả.
+                                Lorem,
+                                ipsum dolor sit amet consectetur adipisicing elit. Eum tenetur iure a error architecto
+                                minus
+                                aut! Ut distinctio sint tempore, vero rem temporibus quidem laboriosam praesentium
+                                explicabo
+                                adipisci obcaecati voluptatibus.
+                            </p>
+                            <a href="#" class="text-sm font-semibold text-orange-500 hover:text-orange-600">
+                                Đọc Tiếp →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article
+                        class="transition-all duration-300 hover:shadow-xl hover:-translate-y-2 rounded-xl overflow-hidden shadow bg-white">
+                        <img src="./assets/images/blog-4.webp" alt="React 19 - Hình ảnh lập trình web hiện đại"
+                            class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span
+                                    class="bg-primary text-gray-800 text-xs font-semibold px-2 py-1 rounded">Frontend</span>
+                                <span class="text-xs text-gray-500">15 Tháng 11, 2025</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-3">
+                                <a href="#" title="React 19: Các Tính Năng Mới Bạn Cần Biết">
+                                    React 19: Các Tính Năng Mới Bạn Cần Biết
+                                </a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+                                Khám phá những tính năng mới nhất trong React 19 và cách sử dụng chúng trong dự án của
+                                bạn.
+                            </p>
+                            <a href="#" class="text-sm font-semibold text-orange-500 hover:text-orange-600">
+                                Đọc Tiếp →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article
+                        class="transition-all duration-300 hover:shadow-xl hover:-translate-y-2 rounded-xl overflow-hidden shadow bg-white">
+                        <img src="./assets/images/blog-5.jpg" alt="Node.js Performance - Hình ảnh phát triển backend"
+                            class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span
+                                    class="bg-primary text-gray-800 text-xs font-semibold px-2 py-1 rounded">Backend</span>
+                                <span class="text-xs text-gray-500">15 Tháng 11, 2025</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-3">
+                                <a href="#" title="Node.js Performance Optimization">
+                                    Node.js Performance Optimization
+                                </a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+                                Các kỹ thuật để tối ưu hóa hiệu suất ứng dụng Node.js và giảm thời gian phản hồi.
+                            </p>
+                            <a href="#" class="text-sm font-semibold text-orange-500 hover:text-orange-600">
+                                Đọc Tiếp →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article
+                        class="transition-all duration-300 hover:shadow-xl hover:-translate-y-2 rounded-xl overflow-hidden shadow bg-white">
+                        <img src="https://cdn.tgdd.vn/2021/10/campaign/top-11-phan-mem-quan-ly-co-so-du-lieu-pho-bien-nhat-hien-nay-1-640x360.jpg"
+                            alt="PostgreSQL Database - Hình ảnh quản lý dữ liệu" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span
+                                    class="bg-primary text-gray-800 text-xs font-semibold px-2 py-1 rounded">Database</span>
+                                <span class="text-xs text-gray-500">15 Tháng 11, 2025</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-3">
+                                <a href="#" title="PostgreSQL Tips & Tricks">
+                                    PostgreSQL Tips & Tricks
+                                </a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+                                Các mẹo và thủ thuật để làm việc hiệu quả với PostgreSQL trong ứng dụng của bạn.
+                            </p>
+                            <a href="#" class="text-sm font-semibold text-orange-500 hover:text-orange-600">
+                                Đọc Tiếp →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article
+                        class="transition-all duration-300 hover:shadow-xl hover:-translate-y-2 rounded-xl overflow-hidden shadow bg-white">
+                        <img src="https://walkingtree.tech/wp-content/uploads/2022/04/Unit-Test-Blog-Image-07-04-04.png"
+                            alt="Unit Testing - Hình ảnh kiểm thử phần mềm" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span
+                                    class="bg-primary text-gray-800 text-xs font-semibold px-2 py-1 rounded">Testing</span>
+                                <span class="text-xs text-gray-500">15 Tháng 11, 2025</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-3">
+                                <a href="#" title="Unit Testing Best Practices">
+                                    Unit Testing Best Practices
+                                </a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+                                Hướng dẫn viết unit tests hiệu quả để đảm bảo chất lượng mã của bạn.
+                            </p>
+                            <a href="#" class="text-sm font-semibold text-orange-500 hover:text-orange-600">
+                                Đọc Tiếp →
+                            </a>
+                        </div>
+                    </article>
+
+                    <article
+                        class="transition-all duration-300 hover:shadow-xl hover:-translate-y-2 rounded-xl overflow-hidden shadow bg-white">
+                        <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1736973439529/e0445f1c-62df-441f-a335-96c468a373da.png"
+                            alt="GitHub Actions - Hình ảnh CI/CD automation" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span
+                                    class="bg-primary text-gray-800 text-xs font-semibold px-2 py-1 rounded">CI/CD</span>
+                                <span class="text-xs text-gray-500">15 Tháng 11, 2025</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-3">
+                                <a href="#" title="GitHub Actions Guide">
+                                    GitHub Actions Guide
+                                </a>
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+                                Tự động hóa workflow phát triển của bạn bằng GitHub Actions và CI/CD pipelines.
+                            </p>
+                            <a href="#" class="text-sm font-semibold text-orange-500 hover:text-orange-600">
+                                Đọc Tiếp →
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="flex justify-center items-center gap-2 my-16">
+                    <button
+                        class="px-4 py-2 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100 transition-colors flex items-center gap-1"
+                        aria-label="Trang trước">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                        Trước
+                    </button>
+                    <button class="px-4 py-2 rounded-lg bg-primary text-gray-900 font-semibold shadow-sm">1</button>
+                    <button
+                        class="px-4 py-2 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100 transition-colors">2</button>
+                    <button
+                        class="px-4 py-2 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100 transition-colors">3</button>
+                    <span class="px-2 text-gray-400">...</span>
+                    <button
+                        class="px-4 py-2 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100 transition-colors">8</button>
+                    <button
+                        class="px-4 py-2 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-100 transition-colors flex items-center gap-1"
+                        aria-label="Trang tiếp theo">
+                        Tiếp
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 md:py-24 bg-gradient-to-r from-amber-400 to-orange-500">
+            <div class="max-w-2xl mx-auto text-center text-white">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Đừng Bỏ Lỡ Những Bài Viết Mới
+                </h2>
+                <p class="text-lg mb-8 opacity-90">
+                    Đăng ký để nhận những cập nhật mới nhất về công nghệ, phát triển phần mềm và giải pháp doanh nghiệp
+                    trực tiếp vào hộp thư của bạn.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <input type="email" placeholder="Nhập email của bạn..."
+                        class="bg-white flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-300"
+                        required aria-label="Email để đăng ký">
+                    <button
+                        class="px-6 py-3 rounded-lg bg-gray-900 text-white font-semibold hover:bg-gray-800 transition-colors">
+                        Đăng Ký
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

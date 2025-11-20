@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <!-- Meta Tags SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="SSL là gì? Khám phá top 5 sự quan trọng của SSL Certificate đối với website doanh nghiệp. Bảo vệ dữ liệu khách hàng và xây dựng lòng tin.">
+    <meta name="keywords" content="SSL certificate, bảo mật website, HTTPS, dữ liệu khách hàng, website doanh nghiệp">
+    <meta name="author" content="Web Security Team">
+    <meta name="publisher" content="Tech Blog">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Open Graph tags for SSL article -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="SSL là gì? Top 5 Sự Quan Trọng Của SSL Đối Với Website Doanh Nghiệp">
+    <meta property="og:description"
+        content="Tìm hiểu về SSL Certificate và tại sao nó quan trọng cho website của bạn. Bảo vệ dữ liệu khách hàng, xây dựng lòng tin và cải thiện SEO.">
+    <meta property="og:url" content="https://yourdomain.com/blog/ssl-importance">
+    <meta property="og:image" content="https://yourdomain.com/images/ssl-og.jpg">
+    <meta property="og:site_name" content="Tech Blog">
+    <meta property="article:published_time" content="2025-01-15T10:00:00+07:00">
+    <meta property="article:author" content="Web Security Team">
+
+    <!-- Twitter Card for SSL -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SSL là gì? Top 5 Sự Quan Trọng Của SSL Đối Với Website Doanh Nghiệp">
+    <meta name="twitter:description" content="Tìm hiểu về SSL Certificate và tại sao nó quan trọng cho website của bạn">
+    <meta name="twitter:image" content="https://yourdomain.com/images/ssl-og.jpg">
+
+    <!-- Canonical URL for SSL article -->
+    <link rel="canonical" href="https://yourdomain.com/blog/ssl-importance">
+
+    <!-- Structured Data (Schema.org) for SSL BlogPosting -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "SSL là gì? Top 5 Sự Quan Trọng Của SSL Đối Với Website Doanh Nghiệp",
+        "description": "Khám phá SSL Certificate và top 5 lý do tại sao nó quan trọng cho website doanh nghiệp",
+        "image": "https://yourdomain.com/images/ssl-og.jpg",
+        "datePublished": "2025-01-15T10:00:00+07:00",
+        "dateModified": "2025-01-19T14:30:00+07:00",
+        "author": {
+            "@type": "Organization",
+            "name": "Web Security Team",
+            "url": "https://yourdomain.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Tech Blog",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://yourdomain.com/logo.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://yourdomain.com/blog/ssl-importance"
+        },
+        "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "SSL miễn phí có an toàn không?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Có, SSL miễn phí như Let's Encrypt cung cấp mã hóa cùng cấp như SSL trả phí"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "SSL Certificate có thời hạn không?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Có, SSL Certificate có thời hạn từ 1-3 năm tùy loại"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    <title>SSL là gì? Top 5 Sự Quan Trọng Của SSL Đối Với Website Doanh Nghiệp</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        :root {
+        --color-primary: #fbcb1c;
+        --gradient: linear-gradient(90deg, #ffd84d 0%, #ff8a3d 100%);
+        }
+        @theme {
+            --color-primary: var(--color-primary);
+        }
+
+        @utility container {
+            @apply w-full mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+        }
+
+        @layer base {
+        body {
+            font-family: "Mulish", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+            line-height: 1.65;
+            background-color: #fffefc;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="relative overflow-hidden mb-10">
+            <img src="https://static.vecteezy.com/system/resources/previews/042/896/767/non_2x/fresh-background-abstract-wave-curve-yellow-orange-free-png.png"
+                class="w-full max-h-[350px] md:max-h-[350px] object-cover md:object-fill" alt="Banner Golden Bee" />
+
+            <div class="container absolute inset-0 flex flex-col items-center justify-center text-center p-5">
+
+                <h1 class="text-2xl md:text-5xl font-extrabold text-primary leading-tight max-w-4xl">
+                    SSL là gì? Top 5 Sự Quan Trọng Của SSL Đối Với Website Doanh Nghiệp
+                </h1>
+
+
+                <nav class="mt-4 text-xs sm:text-sm font-medium" aria-label="Breadcrumb" itemscope
+                    itemtype="https://schema.org/BreadcrumbList">
+                    <ol class="inline-flex items-center space-x-2 text-[#555]">
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="/" itemprop="item" class="hover:text-[#fbcb1c] transition font-medium">
+                                <span itemprop="name">Trang chủ</span>
+                            </a>
+                            <meta itemprop="position" content="1" />
+                        </li>
+
+                        <li><span class="text-[#fbcb1c] text-lg">›</span></li>
+
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="/blog" itemprop="item" class="hover:text-[#fbcb1c] transition font-medium">
+                                <span itemprop="name">Blog</span>
+                            </a>
+                            <meta itemprop="position" content="2" />
+                        </li>
+
+                        <li><span class="text-[#fbcb1c] text-lg">›</span></li>
+
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"
+                            aria-current="page" class="text-[#1f1f1f] font-semibold">
+                            <span itemprop="name">Top 5 sự quan trọng của SSL đối với website doanh nghiệp</span>
+                            <meta itemprop="position" content="3" />
+                        </li>
+                    </ol>
+                </nav>
+
+                <div
+                    class="mt-3 flex flex-wrap items-center justify-center gap-3 text-[#333] text-xs sm:text-sm opacity-90">
+                    <div class="flex items-center gap-1">
+                        <span>Đăng ngày:</span>
+                        <span class="font-semibold text-[#1f1f1f]">12/02/2025</span>
+                    </div>
+
+                    <span class="hidden sm:inline">•</span>
+
+                    <div class="flex items-center gap-1">
+                        <span>Tác giả:</span>
+                        <span class="font-semibold text-[#1f1f1f]">Golden Bee Team</span>
+                    </div>
+
+                    <span class="hidden sm:inline">•</span>
+
+
+                    <div class="flex items-center gap-1">
+                        <span class="font-semibold text-[#1f1f1f]">6 phút</span> đọc
+                    </div>
+
+                    <span class="hidden sm:inline">•</span>
+
+
+                    <div class="flex items-center gap-1">
+                        <span>Cập nhật:</span>
+                        <span class="font-semibold text-[#1f1f1f]">15/02/2025</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <figure class="my-10">
+                <img src="./assets/images/ssl.png" alt="SSL Certificate - Bảo vệ website với mã hóa HTTPS"
+                    class="w-full h-auto rounded-lg shadow-lg object-cover" loading="lazy">
+                <figcaption class="text-center text-gray-600 text-sm mt-3">
+                    SSL Certificate - Công cụ thiết yếu bảo vệ dữ liệu website
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="container">
+            <aside class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-10 shadow-sm">
+                <h2 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2 uppercase tracking-wide">
+                    <span>📖</span> Nội dung chính
+                </h2>
+                <nav aria-label="Mục lục bài viết">
+                    <ul class="space-y-2 text-sm font-medium">
+                        <li><a href="#intro" class="text-gray-700 hover:text-blue-600 hover:underline transition">1.
+                                Khái niệm: SSL/TLS là gì?</a></li>
+                        <li><a href="#how-works" class="text-gray-700 hover:text-blue-600 hover:underline transition">2.
+                                Cơ chế hoạt động của SSL</a></li>
+                        <li><a href="#benefits" class="text-gray-700 hover:text-blue-600 hover:underline transition">3.
+                                5 Lợi ích cốt lõi cho Doanh Nghiệp</a></li>
+                        <li><a href="#implementation"
+                                class="text-gray-700 hover:text-blue-600 hover:underline transition">4. Hướng dẫn cài
+                                đặt SSL</a></li>
+                        <li><a href="#faq" class="text-gray-700 hover:text-blue-600 hover:underline transition">5. Câu
+                                hỏi thường gặp (FAQ)</a></li>
+                        <li><a href="#conclusion"
+                                class="text-gray-700 hover:text-blue-600 hover:underline transition">6. Lời kết</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+
+        <div id="intro" class="container">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">1. SSL là gì? Phân biệt SSL và TLS</h2>
+            <p>
+                <strong>SSL (Secure Sockets Layer)</strong> là một giao thức bảo mật dùng để mã hóa thông tin truyền tải
+                giữa trình
+                duyệt của khách hàng và máy chủ website. Hiện nay, SSL đã được thay thế bằng TLS (Transport Layer
+                Security), nhưng tên gọi SSL vẫn được sử dụng phổ biến. Khi website của bạn có SSL Certificate, URL
+                sẽ hiển thị "https://" thay vì "http://", đi kèm với biểu tượng khóa xanh.
+            </p>
+            <p class="mt-2">
+                Hiện nay, công nghệ này đã được nâng cấp lên <strong>TLS (Transport Layer Security)</strong>, nhưng
+                thuật ngữ "SSL" vẫn được sử dụng rộng rãi. Khi website được cài đặt SSL, thanh địa chỉ sẽ hiển thị ổ
+                khóa màu xanh và giao thức https://.
+            </p>
+        </div>
+
+        <div id="how-works" class="container mt-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">2. Cơ Chế Hoạt Động Của Giao Thức SSL</h2>
+            <p>
+                SSL hoạt động dựa trên quy trình <strong>"Bắt tay ba chiều" (Three-Way Handshake)</strong> để xác thực
+                danh tính và thiết lập mã hóa:
+            </p>
+            <ul class="list-none space-y-3 mt-4">
+                <li class="flex gap-3">
+                    <span class="text-blue-600 font-bold">01.</span>
+                    <div><strong>Client Hello:</strong> Trình duyệt gửi yêu cầu kết nối an toàn kèm theo các phiên bản
+                        mã hóa hỗ trợ.</div>
+                </li>
+                <li class="flex gap-3">
+                    <span class="text-blue-600 font-bold">02.</span>
+                    <div><strong>Server Hello:</strong> Máy chủ phản hồi bằng chứng chỉ SSL (Certificate) chứa khóa công
+                        khai (Public Key).</div>
+                </li>
+                <li class="flex gap-3">
+                    <span class="text-blue-600 font-bold">03.</span>
+                    <div><strong>Key Exchange:</strong> Hai bên trao đổi khóa để tạo ra "Session Key" duy nhất cho phiên
+                        làm việc đó.</div>
+                </li>
+                <li class="flex gap-3">
+                    <span class="text-blue-600 font-bold">04.</span>
+                    <div><strong>Encrypted Data:</strong> Dữ liệu được truyền đi dưới dạng mã hóa, đảm bảo tính toàn
+                        vẹn.</div>
+                </li>
+            </ul>
+
+            <div class="mt-6 bg-blue-50 border-l-4 border-blue-500 p-4 rounded shadow-sm">
+                <p class="font-medium text-blue-800">💡 Mẹo nhanh:</p>
+                <p class="text-sm text-blue-700">Hãy nhấp vào biểu tượng ổ khóa trên thanh địa chỉ ngay bây giờ để xem
+                    thông tin chứng chỉ của trang web này.</p>
+            </div>
+        </div>
+
+        <div id="benefits" class="container mt-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">3. Tại Sao Cần SSL? 5 Lợi Ích "Sống Còn" Cho
+                Website</h2>
+            <p class="text-gray-600 mb-6">
+                Không chỉ là một biểu tượng ổ khóa, SSL mang lại tác động trực tiếp đến doanh thu và thương hiệu của
+                bạn:
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                <div
+                    class="border border-gray-100 bg-white p-6 rounded-xl shadow hover:shadow-md transition duration-300">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full text-blue-600 font-bold text-xl mb-4">
+                        1</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Mã Hóa Tuyệt Đối Dữ Liệu Khách Hàng</h3>
+                    <p class="text-gray-600 text-sm">
+                        Bảo vệ thông tin nhạy cảm (thẻ tín dụng, mật khẩu, email) khỏi tin tặc. Dữ liệu trở thành chuỗi
+                        ký tự vô nghĩa nếu bị đánh cắp giữa đường truyền.
+                    </p>
+                </div>
+
+                <div
+                    class="border border-gray-100 bg-white p-6 rounded-xl shadow hover:shadow-md transition duration-300">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-full text-green-600 font-bold text-xl mb-4">
+                        2</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Xây Dựng Uy Tín & Lòng Tin</h3>
+                    <p class="text-gray-600 text-sm">
+                        Trình duyệt sẽ cảnh báo <strong>"Not Secure"</strong> nếu thiếu SSL. Ổ khóa xanh là tín hiệu tâm
+                        lý giúp khách hàng an tâm "chốt đơn".
+                    </p>
+                </div>
+
+                <div
+                    class="border border-gray-100 bg-white p-6 rounded-xl shadow hover:shadow-md transition duration-300">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center bg-purple-100 rounded-full text-purple-600 font-bold text-xl mb-4">
+                        3</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Tối Ưu Hóa SEO & Thứ Hạng Google</h3>
+                    <p class="text-gray-600 text-sm">
+                        Google đã xác nhận <strong>HTTPS là một tín hiệu xếp hạng</strong>. Website có SSL sẽ được ưu
+                        tiên hiển thị cao hơn so với web HTTP thường.
+                    </p>
+                </div>
+
+                <div
+                    class="border border-gray-100 bg-white p-6 rounded-xl shadow hover:shadow-md transition duration-300">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center bg-orange-100 rounded-full text-orange-600 font-bold text-xl mb-4">
+                        4</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Tuân Thủ Pháp Lý & Tiêu Chuẩn PCI DSS</h3>
+                    <p class="text-gray-600 text-sm">
+                        Để chấp nhận thanh toán thẻ, website bắt buộc phải tuân thủ PCI DSS. SSL là một trong những yêu
+                        cầu cốt lõi của tiêu chuẩn này.
+                    </p>
+                </div>
+
+                <div
+                    class="border border-gray-100 bg-white p-6 rounded-xl shadow hover:shadow-md transition duration-300 md:col-span-2">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-red-100 rounded-full text-red-600 font-bold text-xl">
+                            5</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Chống Tấn Công Man-in-the-Middle (MitM)
+                            </h3>
+
+
+                            [Image of man-in-the-middle attack diagram]
+
+                            <p class="text-gray-600 text-sm">
+                                SSL ngăn chặn kẻ gian đứng giữa "nghe lén" hoặc thay đổi nội dung gói tin. Đảm bảo dữ
+                                liệu đi từ A đến B trọn vẹn không bị chỉnh sửa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="implementation" class="container mt-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">4. Hướng Dẫn 3 Bước Triển Khai SSL Cho Website
+            </h2>
+
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-lg font-bold text-blue-600 flex items-center gap-2">
+                        <span class="bg-blue-100 px-2 py-1 rounded text-sm">Bước 1</span>
+                        Chọn Loại SSL Certificate Phù Hợp
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 mt-2 ml-2 text-gray-700">
+                        <li><strong>Single Domain SSL:</strong> Dành cho 1 tên miền duy nhất (ví dụ:
+                            <code>blog.com</code>).
+                        </li>
+                        <li><strong>Wildcard SSL:</strong> Bảo vệ tên miền chính và mọi subdomain (ví dụ:
+                            <code>*.blog.com</code>).
+                        </li>
+                        <li><strong>Multi-Domain SSL (SAN):</strong> Bảo vệ nhiều tên miền khác nhau trên cùng một chứng
+                            chỉ.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold text-blue-600 flex items-center gap-2">
+                        <span class="bg-blue-100 px-2 py-1 rounded text-sm">Bước 2</span>
+                        Xác Minh Quyền Sở Hữu Domain (Validation)
+                    </h3>
+                    <p class="text-gray-700 mt-2">CA (Certificate Authority) sẽ yêu cầu bạn xác thực qua: Email admin,
+                        cấu hình DNS Record, hoặc tải file lên server.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold text-blue-600 flex items-center gap-2">
+                        <span class="bg-blue-100 px-2 py-1 rounded text-sm">Bước 3</span>
+                        Cài Đặt & Kích Hoạt HTTPS
+                    </h3>
+                    <p class="text-gray-700 mt-2">Cài đặt chứng chỉ lên Hosting/VPS (qua cPanel, DirectAdmin hoặc
+                        Command Line). Sau đó cấu hình <strong>Redirect 301</strong> từ HTTP sang HTTPS.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="faq" class="container mt-12 pt-10 border-t border-gray-200">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">5. Câu Hỏi Thường Gặp (FAQ)</h2>
+
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">SSL miễn phí có an toàn bằng SSL trả phí không?
+                    </h3>
+                    <p class="text-gray-600 text-sm">
+                        Về mặt kỹ thuật mã hóa, <strong>SSL miễn phí (Let's Encrypt) an toàn ngang bằng SSL trả
+                            phí</strong>. Tuy nhiên, SSL trả phí cung cấp bảo hiểm trách nhiệm, xác thực doanh nghiệp
+                        (OV/EV) cao cấp hơn và có con dấu bảo mật (Site Seal) để tăng uy tín.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">SSL Certificate có vĩnh viễn không?</h3>
+                    <p class="text-gray-600 text-sm">
+                        Không. Vì lý do bảo mật, SSL thường chỉ có thời hạn từ <strong>3 tháng (miễn phí) đến 1 năm (trả
+                            phí)</strong>. Bạn cần gia hạn định kỳ để tránh lỗi kết nối.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Chuyển từ HTTP sang HTTPS có làm tụt hạng SEO?
+                    </h3>
+                    <p class="text-gray-600 text-sm">
+                        Có thể biến động nhẹ trong vài ngày đầu. Tuy nhiên, nếu bạn thiết lập <strong>301
+                            Redirect</strong> chuẩn xác và khai báo lại trong Google Search Console, thứ hạng SEO sẽ
+                        tăng trưởng bền vững về sau.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="conclusion" class="container mt-12">
+            <div class="bg-gray-50 rounded-xl p-8 text-center">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Lời Kết</h2>
+                <p class="max-w-2xl mx-auto text-gray-600 mb-6">
+                    Đầu tư vào SSL Certificate là khoản đầu tư rẻ nhất nhưng mang lại hiệu quả cao nhất để bảo vệ tương
+                    lai doanh nghiệp số của bạn. Đừng để khách hàng rời đi chỉ vì cảnh báo "Not Secure".
+                </p>
+                <a href="#"
+                    class="inline-block bg-primary hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition transform hover:-translate-y-1 shadow-md">
+                    Đăng Ký SSL Ngay Hôm Nay
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <aside class="mt-12 pt-8 border-t border-gray-200">
+                <h3 class="text-lg font-bold text-gray-900 mb-4">Lan tỏa kiến thức này</h3>
+                <div class="flex flex-wrap gap-3">
+                    <a href="https://twitter.com/intent/tweet?url=https://yourdomain.com/blog/ssl-importance"
+                        class="bg-black hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg transition flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                        X (Twitter)
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourdomain.com/blog/ssl-importance"
+                        class="bg-[#1877F2] hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition">
+                        Facebook
+                    </a>
+                    <button onclick="navigator.clipboard.writeText('https://yourdomain.com/blog/ssl-importance')"
+                        class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg transition">
+                        Sao chép Link
+                    </button>
+                </div>
+            </aside>
+        </div>
+
+        <div class="container">
+            <aside id="author"
+                class="mt-12 bg-white rounded-lg p-8 border border-gray-100 shadow-sm flex flex-col sm:flex-row gap-6 items-center sm:items-start text-center sm:text-left">
+                <img src="./assets/images/logo-goldenbee.png.webp" alt="Web Security Team"
+                    class="w-20 h-20 rounded-full object-cover ring-2 ring-gray-100" loading="lazy">
+                <div>
+                    <h3 class="text-lg font-bold text-gray-900">Golden Bee</h3>
+                    <p class="text-blue-600 text-sm font-medium mb-2">Chuyên Gia Bảo Mật & Hạ Tầng Mạng</p>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Với hơn 15 năm kinh nghiệm trong lĩnh vực an ninh mạng, chúng tôi cam kết mang đến những giải
+                        pháp bảo vệ dữ liệu tối ưu nhất cho doanh nghiệp vừa và nhỏ.
+                    </p>
+                </div>
+            </aside>
+        </div>
+
+        <div class="container mt-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200 inline-block">Bài viết cùng
+                chủ đề</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <article class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg mb-3">
+                        <img src="./assets/images/cacloai-ssl.jpg" alt="Các Loại SSL Certificate"
+                            class="w-full h-48 object-cover group-hover:scale-105 transition duration-300"
+                            loading="lazy">
+                    </div>
+                    <p class="text-xs font-bold text-blue-600 mb-1 uppercase">Kiến thức cơ bản</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition">
+                        <a href="#" title="Phân Biệt DV, OV và EV SSL: Doanh Nghiệp Cần Loại Nào?">Phân Biệt DV, OV và
+                            EV SSL: Doanh Nghiệp Cần Loại Nào?</a>
+                    </h3>
+                </article>
+
+                <article class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg mb-3">
+                        <img src="./assets/images/bao-mat-website-la-gi.jpg" alt="Bảo Mật Website"
+                            class="w-full h-48 object-cover group-hover:scale-105 transition duration-300"
+                            loading="lazy">
+                    </div>
+                    <p class="text-xs font-bold text-blue-600 mb-1 uppercase">Nâng cao</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition">
+                        <a href="#" title="Checklist 10 Bước Bảo Mật Website Toàn Diện 2025">Checklist 10 Bước Bảo Mật
+                            Website Toàn Diện 2025</a>
+                    </h3>
+                </article>
+
+                <article class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg mb-3">
+                        <img src="./assets/images/google-https-va-seo.png" alt="HTTPS và SEO"
+                            class="w-full h-48 object-cover group-hover:scale-105 transition duration-300"
+                            loading="lazy">
+                    </div>
+                    <p class="text-xs font-bold text-blue-600 mb-1 uppercase">SEO & Marketing</p>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition">
+                        <a href="#" title="Case Study: Tăng 30% Traffic Sau Khi Chuyển Đổi HTTP sang HTTPS">Case Study:
+                            Tăng 30% Traffic Sau Khi Chuyển Đổi HTTP sang HTTPS</a>
+                    </h3>
+                </article>
+            </div>
+        </div>
+
+        <div class=" mt-16 mb-16">
+            <div class="p-10 md:p-14 text-center 
+                bg-gradient-to-r from-amber-400 to-orange-500 text-white shadow-lg">
+
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Đừng để website của bạn gặp rủi ro!
+                </h2>
+
+                <p class="text-lg mb-8 opacity-95 max-w-2xl mx-auto">
+                    Nhận ngay bản tin hàng tuần về các lỗ hổng bảo mật mới nhất và hướng dẫn phòng chống từ chuyên gia.
+                </p>
+
+                <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+                    <input type="email" placeholder="Email doanh nghiệp của bạn" required class="bg-white flex-1 px-5 py-3 rounded-lg text-gray-900 
+                       focus:outline-none focus:ring-2 focus:ring-yellow-300 shadow" aria-label="Email address">
+
+                    <button type="submit" class="px-8 py-3 rounded-lg bg-gray-900 text-white font-semibold 
+                       hover:bg-gray-800 transition-colors shadow-md">
+                        Đăng Ký
+                    </button>
+                </form>
+
+                <p class="text-xs text-white mt-5 opacity-80">
+                    Chúng tôi cam kết không spam. Hủy đăng ký bất cứ lúc nào.
+                </p>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
